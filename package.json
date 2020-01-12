@@ -1,17 +1,21 @@
 {
-  "name": "sass_starter_pack",
-  "version": "1.0.0",
-  "description": "Starter pack using gulp",
+  "name": "fidar_studio_website",
+  "version": "2.0.0",
+  "description": "fidar studio official website",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages -d dist"
   },
-  "author": "Brad Traversy",
+  "author": "Hamid 814",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
