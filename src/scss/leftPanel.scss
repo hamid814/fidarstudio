@@ -1,0 +1,86 @@
+#left-panel-container {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 3;
+  border: 1px solid red;
+  
+  #left-panel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+  }
+  
+  #logo {
+    position: absolute;
+    top: 0;
+    transform: scaleY(0.5) scaleX(0.5);
+  }
+  
+  #page-nav {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    
+    .page-number-section {
+      width: 16px;
+      height: 16px;
+      margin-bottom: 8px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        height: 35px;
+        margin-top: -7px;
+        margin-bottom: 11px;
+        
+        .page-number-dot {
+          background: red;
+        }
+        
+        .page-number {
+          display: inline-block;
+        }
+        
+        .page-number-desc {
+          display: inline-block;
+          animation: pagenumberdescanim 0.3s ease-in-out;
+        }
+      }
+    }
+    
+    .page-number {
+      display: none;
+      margin: 0 0 0 -6px;
+      cursor: default;
+      font-weight: 900;
+      font-size: 0.95em;
+      cursor: pointer;
+    }
+    
+    .page-number-dot {
+      width: 8px;
+      height: 8px;
+      background: #222;
+      border-radius: 50px;
+      box-shadow: -2px 2px 5px rgba(0, 0, 0, .5);
+      cursor: pointer;
+    }
+    
+    .page-number-desc {
+      position: absolute;
+      top: 0px;
+      left: 30px;
+      color: #444;
+      padding: 1px 4px;
+      display: none;
+    }
+  }
+}

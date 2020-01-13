@@ -32,6 +32,7 @@ function openMenuModal() {
   menuModal.classList.add('menu-modal-on');
   menuModal.classList.remove('menu-modal-off-a');
   menuModal.classList.remove('menu-modal-off-d');
+  document.body.classList.add('no-scroll');
 }
 
 function close() {
@@ -41,6 +42,7 @@ function close() {
   mountModal.classList.remove('mount-on');
   callUsModal.classList.add('call-us-off-a');
   callUsModal.classList.remove('call-us-on');
+  document.body.classList.remove('no-scroll');
   setTimeout(() => {
     menuModal.classList.add('menu-modal-off-d');
     mountModal.classList.add('mount-off-d');
@@ -52,42 +54,23 @@ function showMount() {
   mountModal.classList.add('mount-on');
   mountModal.classList.remove('mount-off-d');
   mountModal.classList.remove('mount-off-a');
+  document.body.classList.add('no-scroll');
 }
 
 function showCallUs() {
   callUsModal.classList.add('call-us-on');
   callUsModal.classList.remove('call-us-off-a');
   callUsModal.classList.remove('call-us-off-d');
+  document.body.classList.add('no-scroll');
 }
 
 // FUNCTIONS TO RUNB ON PAGE LOAD:
-// whereIsActive(activeId);
-
-// TEMP
-const hamid = 'hamid';
-
-document.addEventListener('scroll', (event) => {
-  // console.log(event.type)
-});
-
-$('.pagenav a').on('click', function (e) {
-  if (this.hash !== '') {
-    e.preventDefault();
-    console.log('ha,mid')
-
-    const hash = this.hash;
-
-    $('html, body')
-      .animate({
-        scrollTop: $(hash).offset().top
-      },3000);
-  }
-});
-
 setTimeout(() => {
   whereIsActive(activeId);
-}, 2500);
+}, 500);
+
+// TEMP
+
 
 // COMMENTS
-// add overflow hidden to body when modal is open
 // add patterns to the design (lines or dots with rotations)
