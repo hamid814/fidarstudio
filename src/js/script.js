@@ -12,7 +12,7 @@ const mountModal = document.querySelector('#mount-modal');
 let activeId = 1;
 let menuIsOn = false;
 
-// EVENT LISTENERS
+// // EVENT LISTENERS
 menuBtn.addEventListener('click', openMenuModal);
 callUs.addEventListener('click', showCallUs);
 for(let x of xBtns) {
@@ -22,7 +22,7 @@ for(let dot of cornerDots) {
   dot.addEventListener('click', showMount);
 }
 
-// FUNCTIONS
+// // FUNCTIONS
 function whereIsActive() {
   document.querySelector('#section-' + activeId).classList.remove('deactive-section');
   document.querySelector('#section-' + activeId).classList.add('active-section');
@@ -45,7 +45,7 @@ function close() {
     menuModal.classList.add('menu-modal-off-d');
     mountModal.classList.add('mount-off-d');
     callUsModal.classList.add('call-us-off-d');
-},500);
+  },500);
 }
 
 function showMount() {
@@ -90,4 +90,4 @@ setTimeout(() => {
 
 // COMMENTS
 // add overflow hidden to body when modal is open
-// width font size and height: vh vw
+// add patterns to the design (lines or dots with rotations)
