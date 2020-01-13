@@ -221,16 +221,12 @@ a {
 
 .wraped {
   width: 90vw;
-  height: 833px;
+  height: 90vh;
   margin: 55px auto;
   box-shadow: 0 0 75px rgba(0, 0, 0, .07);
   padding: 60px 60px;
   text-align: right;
   position: relative;
-  /* border-top-right-radius: 30px; */
-  border-top: 1px solid transparent;
-  border-right: 1px solid transparent;
-  /* z-index: 10; */
   overflow: hidden;
 }
 
@@ -243,7 +239,6 @@ a {
   background: #ebd300;
   border-radius: 50px;
   cursor: pointer;
-  /* animation: jello-horizontal 1.8s both infinite; */
 }
 
 .section-header {
@@ -275,7 +270,6 @@ a {
   height: 8.25vh;
   font-size: 2.5vh;
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, .5);
-  /* background: #ebd300; */
   text-align: center;
   padding-top: 2.2vh; 
   cursor: pointer;
@@ -296,7 +290,6 @@ a {
 
 .right-list-item {
   margin: 2.6vh 0;
-
 }
 
 .right-list-item-number {
@@ -321,7 +314,6 @@ a {
   padding-left: 2vw;
   padding-right: 0;
   border-color: #000;
-  /* color: #ebd300; */
 }
 
 .right-list-item:hover .right-list-item-title {
@@ -346,13 +338,6 @@ a {
   margin-left: -60vw;
 }
 
-/* .section:first-child {
-  margin-top: 50px;
-}
-.section:last-child {
-  margin-bottom: 50px;
-} */
-
 /* call us hover effect: */
 .callus-slide {
   height: 45px;
@@ -367,7 +352,7 @@ a {
   -webkit-transition: 0.08s ease-in;
 }
 .callus-slide:after{
-  content:"call us";
+  content:"تماس با ما";
   position:absolute;
   width:100%;
   height:100%;
@@ -378,11 +363,11 @@ a {
 }
 
 .callus-slide:before {
-  content:"call us";
+  content:"تماس با ما";
   height:100%;
   width:100%;
   position:absolute;
-  bottom:-100%;
+  bottom: 100%;
   text-align:center;
   opacity: 0;
   -webkit-transition: all 0.2s cubic-bezier(1,1,1,1); 
@@ -395,7 +380,7 @@ a {
   color:#ebd300;
 }
 .callus-slide:hover:after{
-  bottom:100%;
+  bottom: -100%;
   opacity:0;
 }
 /* call us hover effect end */
@@ -475,43 +460,6 @@ a {
 }
 /* the general grow effetc on btns end */
 
-/* mountain modal start */
-
-/* mountain modal end */
-
-/* call us modal start */
-#call-us-modal {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  background: #444;
-}
-
-#call-us-modal .wraped {
-  box-shadow: 0 0 75px rgba(0, 0, 0, .5);
-}
-
-#call-us-modal .line {
-  background: #ccc;
-}
-
-.call-us-off-d {
-  display: none;
-}
-
-.call-us-off-a {
-  animation: fadeOut 0.5s ease-out;
-}
-
-.call-us-on {
-  display: block;
-  animation: fadeIn 0.5s ease-in;
-}
-/* call us modal end */
-
 .deactive-section .animate {
   opacity: 0;
 }
@@ -541,20 +489,4 @@ a {
 
 .active-section .section-backtext {
   animation: fadeInTo1 1.3s ease-in;
-}
-
-/* scrollbar styling start */
-::-webkit-scrollbar-track{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar{
-	width: 7px;
-	background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb{
-	background-color: #ebd300;
 }

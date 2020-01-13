@@ -1,0 +1,30 @@
+#call-us-modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background: #444;
+
+  .wraped {
+    box-shadow: 0 0 75px rgba(0, 0, 0, .5);
+  }
+
+  .line {
+    background: #ccc;
+  }
+}
+
+.call-us-off-d {
+  display: none;
+}
+
+.call-us-off-a {
+  animation: fadeOut 0.5s ease-out;
+}
+
+.call-us-on {
+  display: block;
+  animation: fadeIn 0.5s ease-in;
+}
