@@ -4,10 +4,21 @@
     padding: 0;
     display: flex;
     
+    &:hover {
+
+      .column {
+        flex-basis: 30%;
+      }
+    }
+    
     .column {
       flex-basis: 33.33%;
       display: flex;
       flex-direction: column;
+      
+      &:hover {
+        flex-basis: 40%;
+      }
       
       .row {
         display: flex;
@@ -19,38 +30,102 @@
 
     .column-one {
 
+      &:hover {
+        
+        .row-one {
+          height: 50%;
+        }
+
+        .row-two {
+          height: 25%;
+        }
+      }
+
       .row-one {
         height: 64%;
+        
+        &:hover {
+          height: 75%;
+        }
       }
-
+      
       .row-two {
         height: 36%;
+        
+        &:hover {
+          height: 50%;
+        }
       }
     }
-
+    
     .column-two {
-
+      
+      &:hover {
+        .row-one {
+          height: 25%;
+        }
+        
+        .row-two {
+          height: 25%;
+        }
+        
+        .row-three {
+          height: 25%;
+        }  
+      }
+      
       .row-one {
-
+        height: 40%;
+        
+        &:hover {
+          height: 50%;
+        }
       }
-
+      
       .row-two {
-
+        height: 30%;
+        
+        &:hover {
+          height: 50%;
+        }
       }
-
+      
       .row-three {
-
+        height: 30%;
+        
+        &:hover {
+          height: 50%;
+        }
       }
     }
-
+    
     .column-three {
-
-      .row-one {
+      
+      &:hover {
         
+        .row-one {
+          height: 30%;
+        }
+        
+        .row-two {
+          height: 40%;
+        }
       }
-
-      .row-two {
+      
+      .row-one {
+        height: 40%;
         
+        &:hover {
+          height: 60%;
+        }
+      }
+      
+      .row-two {
+        height: 60%;
+        
+        &:hover {
+          height: 70%;
+        }
       }
     }
 

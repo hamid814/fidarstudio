@@ -3,6 +3,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .services .wraped:hover .column {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%; }
   .services .wraped .column {
     -ms-flex-preferred-size: 33.33%;
     flex-basis: 33.33%;
@@ -13,6 +16,9 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    .services .wraped .column:hover {
+      -ms-flex-preferred-size: 40%;
+      flex-basis: 40%; }
     .services .wraped .column .row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -27,9 +33,47 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
+  .services .wraped .column-one:hover .row-one {
+    height: 50%; }
+  .services .wraped .column-one:hover .row-two {
+    height: 25%; }
   .services .wraped .column-one .row-one {
     height: 64%; }
+    .services .wraped .column-one .row-one:hover {
+      height: 75%; }
   .services .wraped .column-one .row-two {
     height: 36%; }
+    .services .wraped .column-one .row-two:hover {
+      height: 50%; }
+  .services .wraped .column-two:hover .row-one {
+    height: 25%; }
+  .services .wraped .column-two:hover .row-two {
+    height: 25%; }
+  .services .wraped .column-two:hover .row-three {
+    height: 25%; }
+  .services .wraped .column-two .row-one {
+    height: 40%; }
+    .services .wraped .column-two .row-one:hover {
+      height: 50%; }
+  .services .wraped .column-two .row-two {
+    height: 30%; }
+    .services .wraped .column-two .row-two:hover {
+      height: 50%; }
+  .services .wraped .column-two .row-three {
+    height: 30%; }
+    .services .wraped .column-two .row-three:hover {
+      height: 50%; }
+  .services .wraped .column-three:hover .row-one {
+    height: 30%; }
+  .services .wraped .column-three:hover .row-two {
+    height: 40%; }
+  .services .wraped .column-three .row-one {
+    height: 40%; }
+    .services .wraped .column-three .row-one:hover {
+      height: 60%; }
+  .services .wraped .column-three .row-two {
+    height: 60%; }
+    .services .wraped .column-three .row-two:hover {
+      height: 70%; }
   .services .wraped div {
     border: 1px solid red; }
