@@ -1,17 +1,293 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="fa">
 <head>
-  <title>Sass Starter Pack</title>
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>فیدار استودیو</title>
+  <!--bootstrap start-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--bootstrap End-->
+  <!-- main css -->
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/menuModal.css">
+  <link rel="stylesheet" href="css/mountModal.css">
+  <link rel="stylesheet" href="css/callUsModal.css">
+  <link rel="stylesheet" href="css/scrollBar.css">
+  <link rel="stylesheet" href="css/leftPanel.css">
+  <link rel="stylesheet" href="css/rightPanel.css">
+  <!-- temp for test style sheet -->
   <link rel="stylesheet" href="css/test.css">
+  <!-- animations -->
+  <link rel="stylesheet" href="css/keyframes.css">
+  <!-- @media files -->
+  <link rel="stylesheet" href="css/media1300.css">
+  <!-- menu btn functional css file -->
+  <!-- key: jbnilvkujshnfujvn -->
+  <link rel="stylesheet" href="style/menuBtn.css">
 </head>
-
 <body>
-  <h1>Sass Starter Pack</h1>
-  <h2>header 2</h2>
-  <p>Edit the scss/style.scss file and it will automatically compile into css/style.css</p>
-</body>
+  <!-- left bar start -->
+  <section id="left-panel-container">
+    <div id="left-panel">
+      <div id="logo">
+        <!-- logo place -->
+        <img src="images/logo.png" alt="fidar-logo">
+      </div>
+      <!-- pagination dots -->
+      <div id="page-nav">
+        <a href="#section-1">
+          <div class="page-number-section" id="dot-number-1">
+            <div class="page-number">
+              01
+            </div>
+            <div class="page-number-dot"></div>
+            <div class="page-number-desc">desc</div>
+          </div>
+        </a>
+        <a href="#section-2">
+          <div class="page-number-section" id="dot-number-2">
+            <div class="page-number">
+              02
+            </div>
+            <div class="page-number-dot"></div>
+            <div class="page-number-desc">desc</div>
+          </div>
+        </a>
+        <a href="#section-3">
+          <div class="page-number-section" id="dot-number-3">
+            <div class="page-number">
+              03
+            </div>
+            <div class="page-number-dot"></div>
+            <div class="page-number-desc">desc</div>
+          </div>
+        </a>
+        <div class="page-number-section" id="dot-number-4">
+          <div class="page-number">
+            04
+          </div>
+          <div class="page-number-dot"></div>
+          <div class="page-number-desc">desc</div>
+        </div>
+        <div class="page-number-section" id="dot-number-5">
+          <div class="page-number">
+            05
+          </div>
+          <div class="page-number-dot"></div>
+          <div class="page-number-desc">desc</div>
+        </div>
+      </div>
+    </div> 
+  </section>
+  <!-- left bar end -->
+  
+  <!-- right bar start -->
+  <section id="right-panel-container">
+    <div id="right-panel">
+      <!-- menu btn -->
+      <div id="menu-btn">
+        <div class="menu-btn-container">
+          <div class="menu-btn-line"></div>
+          <div class="menu-btn-line"></div>
+          <div class="menu-btn-line"></div>
+        </div>
+      </div>
+      <!-- social media icons -->
+      <div id="social-media">
+        <!-- social media icons place -->
+        <div class="social-media-icon slide">
+          <img src="images/instagram.png">
+          <span class="social-media-icon-desc">
+            our instagram
+          </span>
+        </div>
+        <div class="social-media-icon">
+          <img src="images/instagram.png">
+          <span class="social-media-icon-desc">
+            our instagram
+          </span>
+        </div>
+        <div class="social-media-icon">
+          <img src="images/instagram.png">
+          <span class="social-media-icon-desc">
+            our instagram
+          </span>
+        </div>
+      </div>
+      <div id="call-us" class="callus-slide">
+        <!-- fast contact us btn -->
+      </div>
+    </div>
+  </section>
+  <!-- right bar end -->
+  <!-- main sections start -->
+  <section class="section deactive-section" id="section-1">
+    <div class="wraped">
+      <div class="dot">
 
+      </div>
+      <h2 class="section-header">
+        <div class="animate anim-1">
+          هدر
+          <span>بخش</span>
+        </div>
+      </h2>
+      <div class="section-body">
+        <div class="animate anim-2">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم است و برای.
+        </div>
+      </div>
+      <div>
+        <div class="animate anim-3 section-button fill">
+          <!-- <div class="grow"> -->
+            <!-- <div class="grow-t"> -->
+              دکمه بخش
+            <!-- </div> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class="section-right">
+        <div class="animate anim-3">
+          <div class="right-list">
+            <div class="right-list-item">
+              <span class="right-list-item-number">03</span>
+              <span class="right-list-item-title">یه چیزی</span>
+            </div>
+            <div class="right-list-item">
+              <span class="right-list-item-number">04</span>
+              <span class="right-list-item-title">یه چیزی</span>
+            </div>
+          </div>
+          <div class="right-list">
+            <div class="right-list-item">
+              <span class="right-list-item-number">01</span>
+              <span class="right-list-item-title">یه چیزی</span>
+            </div>
+            <div class="right-list-item">
+              <span class="right-list-item-number">02</span>
+              <span class="right-list-item-title">یه چیزی</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-backtext">
+        sectionseccc
+        <span>yedesarebacktext</span>
+      </div>
+    </div>
+  </section>
+  <section class="section deactive-section" id="section-2">
+    <div class="wraped">
+      <div class="dot">
+        haha
+      </div>
+    </div>
+  </section>
+  <section class="section deactive-section" id="section-3">
+    <div class="wraped">
+      <div class="dot">
+
+      </div>
+    </div>
+  </section>
+  <section class="section deactive-section" id="section-4">
+    <div class="wraped">
+      <div class="dot">
+
+      </div>
+    </div>
+  </section>
+  <section class="section deactive-section" id="section-5">
+    <div class="wraped">
+      <div class="dot">
+
+      </div>
+    </div>
+  </section>
+  <!-- main sections end -->
+  <!-- menu modal start -->
+  <div id="menu-modal" class="menu-modal-off-d menu-modal-off-a">
+    <div id="menu-wraper">
+      <div class="x-btn">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="menu-menu-container">
+        <div class="menu-item">
+          <div class="menu-item-title">
+            لیست آیتم
+          </div>
+          <div class="menu-item-number">
+            01
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-title">
+            لیست آیتم
+          </div>
+          <div class="menu-item-number">
+            02
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- menu modal end -->
+  <!-- callus modal start -->
+  <div id="call-us-modal" class="call-us-off-d call-us-off-a">
+    <div id="call-us-modal-container" class="wraped">
+      <div class="x-btn">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="header">
+        چجوری پیدامون کنید؟
+      </div>
+      <span class="content">
+        <form class="form">
+          <div class="title">
+            ارسال پیام
+          </div>
+          <div class="form-group">
+            <label for=""><span>*</span>نام</label>
+            <input type="text" name="">
+          </div>
+          <div class="form-group">
+            <label for=""><span>*</span>ایمیل</label>
+            <input type="text" name="">
+          </div>
+          <div class="form-group">
+            <label for="">سایت</label>
+            <input type="text" name="">
+          </div>
+          <div class="form-group">
+            <label for=""><span>*</span>پیام</label>
+            <input type="text" name="">
+          </div>
+          <div class="form-group">
+            <input class="submit-button" type="submit" value="ارسال">
+          </div>
+        </form>
+        <div class="information">
+          test1
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- callus modal end -->
+  <!-- mountain modal start -->
+  <div id="mount-modal" class="mount-off-d mount-off-a">
+    <div class="x-btn">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div> 
+  </div>
+  <!-- mountain modal end -->
+  <script src="js/script.js"></script>
+</body>
 </html>
