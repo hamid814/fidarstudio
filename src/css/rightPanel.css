@@ -14,9 +14,10 @@
     width: 100px;
     height: 100%; }
   #right-panel-container #menu-btn {
+    border: 1px solid red;
     position: absolute;
     top: 30px;
-    right: 30px; }
+    right: calc((var(--side-bar-width) - 7px) / 2); }
     #right-panel-container #menu-btn .menu-btn-container {
       cursor: pointer;
       -webkit-animation: menubtncontaineranim 6s cubic-bezier(1, 1, 1, 1) infinite;
@@ -32,14 +33,17 @@
           animation: menubtnlineanim 4s ease-in-out infinite reverse; }
         #right-panel-container #menu-btn .menu-btn-container .menu-btn-line:last-child {
           -webkit-animation: menubtnlineanim 4s ease-in-out infinite;
-          animation: menubtnlineanim 4s ease-in-out infinite; }
+          animation: menubtnlineanim 4s ease-in-out infinite;
+          margin-bottom: 0px; }
   #right-panel-container #social-media {
     position: absolute;
     top: 40vh;
     right: 10px;
     border: 1px solid red; }
     #right-panel-container #social-media .social-media-icon {
-      position: relative; }
+      position: relative;
+      width: 48px;
+      height: 48px; }
       #right-panel-container #social-media .social-media-icon:hover .social-media-icon-desc {
         display: inline-block;
         -webkit-animation: socialmediadescanim 0.5s ease-in-out;

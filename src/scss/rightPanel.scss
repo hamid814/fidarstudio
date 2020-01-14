@@ -17,9 +17,10 @@
   }
   
   #menu-btn {
+    border: 1px solid red;
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: calc((var(--side-bar-width) - 7px ) / 2);
     
     .menu-btn-container {
       cursor: pointer;
@@ -43,6 +44,7 @@
         
         &:last-child {
           animation: menubtnlineanim 4s ease-in-out infinite;
+          margin-bottom: 0px;
         }
       }
     }
@@ -56,6 +58,9 @@
     
     .social-media-icon {
       position: relative;
+      width: 48px;
+      height: 48px;
+      // border: 1px solid red;
 
       &:hover {
         .social-media-icon-desc {
