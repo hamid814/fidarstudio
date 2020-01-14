@@ -39,7 +39,7 @@ a, a:hover, a:active, a:visited {
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
-  border: 1px solid red;
+  border: 1px solid transparent; /* never delete this border, the ids wont work */
   
   .wraped {
     width: calc(100vw - (var(--side-bar-width) * 2));
@@ -65,7 +65,26 @@ a, a:hover, a:active, a:visited {
       border-radius: 50px;
       cursor: pointer;
       z-index: 1;
+      animation: dzkjkjdxbvkj 6s ease-in-out infinite;
     }
+  }
+}
+
+@keyframes dzkjkjdxbvkj {
+  0% {
+    border-top-color: transparent;
+    border-bottom-color: #ebd300;
+    transform: rotateZ(0deg);
+  }
+  90% {
+    transform: rotateZ(0deg);
+    border-top-color: transparent;
+    border-bottom-color: #ebd300;
+  }
+  100% {
+    transform: rotateZ(180deg);
+    border-top-color: #ebd300;
+    border-bottom-color: transparent;
   }
 }
 

@@ -36,7 +36,8 @@ a, a:hover, a:active, a:visited {
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
-  border: 1px solid red; }
+  border: 1px solid transparent;
+  /* never delete this border, the ids wont work */ }
   .section .wraped {
     width: calc(100vw - (var(--side-bar-width) * 2));
     height: 90vh;
@@ -60,7 +61,43 @@ a, a:hover, a:active, a:visited {
       background: transparent;
       border-radius: 50px;
       cursor: pointer;
-      z-index: 1; }
+      z-index: 1;
+      -webkit-animation: dzkjkjdxbvkj 6s ease-in-out infinite;
+      animation: dzkjkjdxbvkj 6s ease-in-out infinite; }
+
+@-webkit-keyframes dzkjkjdxbvkj {
+  0% {
+    border-top-color: transparent;
+    border-bottom-color: #ebd300;
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg); }
+  90% {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+    border-top-color: transparent;
+    border-bottom-color: #ebd300; }
+  100% {
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+    border-top-color: #ebd300;
+    border-bottom-color: transparent; } }
+
+@keyframes dzkjkjdxbvkj {
+  0% {
+    border-top-color: transparent;
+    border-bottom-color: #ebd300;
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg); }
+  90% {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+    border-top-color: transparent;
+    border-bottom-color: #ebd300; }
+  100% {
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+    border-top-color: #ebd300;
+    border-bottom-color: transparent; } }
 
 .section-header {
   position: absolute;

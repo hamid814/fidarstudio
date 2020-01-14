@@ -57,8 +57,10 @@
       cursor: pointer; }
     #left-panel-container #page-nav .page-number-desc {
       position: absolute;
+      width: 100px;
       top: 0px;
       left: 30px;
+      text-align: left;
       color: #444;
       padding: 1px 4px;
       display: none; }

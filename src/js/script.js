@@ -2,7 +2,7 @@
 const cornerDots = document.querySelectorAll('.dot');
 const menuBtn = document.querySelector('#menu-btn');
 const dots = document.querySelectorAll('.page-number-section');
-const callUs = document.querySelector('#call-us');
+const callUs = document.querySelectorAll('.call-us');
 const callUsModal = document.querySelector('#call-us-modal');
 const menuModal = document.querySelector('#menu-modal');
 const xBtns = document.querySelectorAll('.x-btn');
@@ -14,28 +14,30 @@ let menuIsOn = false;
 
 // // EVENT LISTENERS
 menuBtn.addEventListener('click', openMenuModal);
-callUs.addEventListener('click', showCallUs);
-for(let x of xBtns) {
-  x.addEventListener('click', close);
-}
-for(let dot of cornerDots) {
+callUs.forEach(btn => {
+  btn.addEventListener('click', showCallUs);
+})
+xBtns.forEach(btn => {
+  btn.addEventListener('click', close);
+})
+cornerDots.forEach(dot => {
   dot.addEventListener('click', showMount);
-}
+})
 
 // // FUNCTIONS
-function whereIsActive() {
+const whereIsActive = () => {
   document.querySelector('#section-' + activeId).classList.remove('deactive-section');
   document.querySelector('#section-' + activeId).classList.add('active-section');
 }
 
-function openMenuModal() {
+const openMenuModal = () => {
   menuModal.classList.add('menu-modal-on');
   menuModal.classList.remove('menu-modal-off-a');
   menuModal.classList.remove('menu-modal-off-d');
   document.body.classList.add('no-scroll');
 }
 
-function close() {
+const close = () => {
   menuModal.classList.add('menu-modal-off-a');
   menuModal.classList.remove('menu-modal-on');
   mountModal.classList.add('mount-off-a');
@@ -50,14 +52,14 @@ function close() {
   }, 490);
 }
 
-function showMount() {
+const showMount = () => {
   mountModal.classList.add('mount-on');
   mountModal.classList.remove('mount-off-d');
   mountModal.classList.remove('mount-off-a');
   document.body.classList.add('no-scroll');
 }
 
-function showCallUs() {
+const showCallUs = () => {
   callUsModal.classList.add('call-us-on');
   callUsModal.classList.remove('call-us-off-a');
   callUsModal.classList.remove('call-us-off-d');
@@ -70,7 +72,7 @@ setTimeout(() => {
 }, 500);
 
 // TEMP
-
+showCallUs();
 
 // COMMENTS
 // add patterns to the design (lines or dots with rotations)

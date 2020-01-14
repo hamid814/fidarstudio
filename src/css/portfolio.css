@@ -32,7 +32,8 @@
       transition-delay: 0.2s;
       margin-top: 0.3rem; }
     .portfolio .wraped .item .title {
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      cursor: default; }
     .portfolio .wraped .item .back-layer {
       position: absolute;
       z-index: -1;
@@ -42,7 +43,8 @@
       height: 100%; }
     .portfolio .wraped .item .desc {
       opacity: 0;
-      margin-top: 3rem; }
+      margin-top: 3rem;
+      cursor: default; }
     .portfolio .wraped .item .button {
       background: #ebd300;
       padding: 0.25rem 1.6rem;

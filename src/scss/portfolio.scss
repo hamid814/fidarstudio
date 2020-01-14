@@ -20,7 +20,6 @@
         .desc {
           opacity: 1;
           transition-delay: 0.1s;
-          // margin-top: 0.2rem;
         }
         
         .button {
@@ -32,6 +31,7 @@
       
       .title {
         font-size: 2.5rem;
+        cursor: default;
       }
 
       .back-layer {
@@ -46,6 +46,7 @@
       .desc {
         opacity: 0;
         margin-top: 3rem;
+        cursor: default;
       }
       
       .button {
