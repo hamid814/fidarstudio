@@ -43,6 +43,7 @@
 
       .row-one {
         height: 64%;
+        background: #ebd30044;
         
         &:hover {
           height: 75%;
@@ -51,6 +52,7 @@
       
       .row-two {
         height: 36%;
+        background: #ebd300c3;
         
         &:hover {
           height: 50%;
@@ -76,6 +78,7 @@
       
       .row-one {
         height: 40%;
+        background: #ebd3008a;
         
         &:hover {
           height: 50%;
@@ -84,6 +87,7 @@
       
       .row-two {
         height: 30%;
+        background: #ebd30053;
         
         &:hover {
           height: 50%;
@@ -92,6 +96,7 @@
       
       .row-three {
         height: 30%;
+        background: #ebd300a3;
         
         &:hover {
           height: 50%;
@@ -114,6 +119,7 @@
       
       .row-one {
         height: 40%;
+        background: #ebd3006f;
         
         &:hover {
           height: 60%;
@@ -122,6 +128,7 @@
       
       .row-two {
         height: 60%;
+        background: #ebd300ba;
         
         &:hover {
           height: 70%;
@@ -130,7 +137,8 @@
     }
 
     div {
-      border: 1px solid red;
+      cursor: default;
+      // border: 1px solid red;
     }
   }
 }
