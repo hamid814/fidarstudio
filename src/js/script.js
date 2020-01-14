@@ -12,18 +12,6 @@ const mountModal = document.querySelector('#mount-modal');
 let activeId = 1;
 let menuIsOn = false;
 
-// // EVENT LISTENERS
-menuBtn.addEventListener('click', openMenuModal);
-callUs.forEach(btn => {
-  btn.addEventListener('click', showCallUs);
-})
-xBtns.forEach(btn => {
-  btn.addEventListener('click', close);
-})
-cornerDots.forEach(dot => {
-  dot.addEventListener('click', showMount);
-})
-
 // // FUNCTIONS
 const whereIsActive = () => {
   document.querySelector('#section-' + activeId).classList.remove('deactive-section');
@@ -71,8 +59,19 @@ setTimeout(() => {
   whereIsActive(activeId);
 }, 500);
 
+// // EVENT LISTENERS
+menuBtn.addEventListener('click', openMenuModal);
+callUs.forEach(btn => {
+  btn.addEventListener('click', showCallUs);
+})
+xBtns.forEach(btn => {
+  btn.addEventListener('click', close);
+})
+cornerDots.forEach(dot => {
+  dot.addEventListener('click', showMount);
+})
+
 // TEMP
-showCallUs();
 
 // COMMENTS
 // add patterns to the design (lines or dots with rotations)

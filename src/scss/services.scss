@@ -1,0 +1,61 @@
+.services {
+  
+  .wraped {
+    padding: 0;
+    display: flex;
+    
+    .column {
+      flex-basis: 33.33%;
+      display: flex;
+      flex-direction: column;
+      
+      .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .column-one {
+
+      .row-one {
+        height: 64%;
+      }
+
+      .row-two {
+        height: 36%;
+      }
+    }
+
+    .column-two {
+
+      .row-one {
+
+      }
+
+      .row-two {
+
+      }
+
+      .row-three {
+
+      }
+    }
+
+    .column-three {
+
+      .row-one {
+        
+      }
+
+      .row-two {
+        
+      }
+    }
+
+    div {
+      border: 1px solid red;
+    }
+  }
+}
