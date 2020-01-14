@@ -91,13 +91,6 @@
     #call-us-modal .content .information {
       -ms-flex-preferred-size: 40%;
       flex-basis: 40%; }
-      #call-us-modal .content .information div {
-        display: inline-block; }
-      #call-us-modal .content .information .info-item {
-        border: 1px solid red; }
-        #call-us-modal .content .information .info-item span {
-          display: inline-block;
-          color: #ebd300; }
 
 .call-us-off-d {
   display: none; }

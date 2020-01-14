@@ -62,19 +62,21 @@
       }
       
       .form-group {
-        // border: 1px solid red;
         border-bottom: 3px solid #ebd300;
         width: 70%;
         margin: auto;
         margin-top: 15px;
 
+        &:last-child {
+          border: none;
+        }
         
         label {
 
-            span {
-              color: red;
-              margin-right: 7px;
-            }
+          span {
+            color: red;
+            margin-right: 7px;
+          }
         }
         
         input {
@@ -84,15 +86,39 @@
           text-align: center;
           font-size: 1.2rem;
         }
-        
-        .submit-button {
-          border: 1px solid red !important;
-        }
+      }
+
+      input[type="submit"] {
+        background: #ebd300;
+        color: #333;
+        width: 70%;
+        border: none;
+        padding: 0.3rem;
       }
     }
     
     .information {
       flex-basis: 40%;
+      
+      div {
+        display: inline-block;
+      }
+      
+      .info-item {
+        border: 1px solid red;
+        
+        span {
+          display: inline-block;
+          color: #ebd300;
+        }
+
+        .map {
+          
+          .map-box {
+            // border: 1px solid #ebd300;
+          }
+        }
+      }
     }
   }
 }
