@@ -47,7 +47,7 @@ function close() {
     menuModal.classList.add('menu-modal-off-d');
     mountModal.classList.add('mount-off-d');
     callUsModal.classList.add('call-us-off-d');
-  },500);
+  }, 490);
 }
 
 function showMount() {
@@ -70,7 +70,7 @@ setTimeout(() => {
 }, 500);
 
 // TEMP
-
+showCallUs();
 
 // COMMENTS
 // add patterns to the design (lines or dots with rotations)

@@ -7,20 +7,17 @@
   right: 0;
   display: inline-block;
   z-index: 3;
-  border: 1px solid red;
   
   #right-panel {
     position: relative;
     width: 100px;
     height: 100%;
-    // border: 1px solid red;
   }
   
   #menu-btn {
-    border: 1px solid red;
     position: absolute;
     top: 30px;
-    right: calc((var(--side-bar-width) - 7px ) / 2);
+    right: calc((var(--side-bar-width)) / 2);
     
     .menu-btn-container {
       cursor: pointer;
@@ -53,15 +50,14 @@
   #social-media {
     position: absolute;
     top: 40vh;
-    right: 10px;
-    border: 1px solid red;
+    right: calc((var(--side-bar-width) - 24px) / 2);
+    cursor: pointer;
     
     .social-media-icon {
       position: relative;
       width: 48px;
       height: 48px;
-      // border: 1px solid red;
-
+      
       &:hover {
         .social-media-icon-desc {
           display: inline-block;
@@ -83,12 +79,13 @@
       }
     }
   }
-    
+  
   #call-us {
     transform: rotateZ(-90deg);
     position: absolute;
     bottom: 90px;
-    right: -50px;
+    right: 50px;
+    right: calc((var(--side-bar-width) - 25px) / 2 * -1);
     font-weight: 900;
     letter-spacing: 0px;
     font-size: 1.6em;

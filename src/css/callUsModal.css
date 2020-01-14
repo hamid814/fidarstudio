@@ -7,8 +7,23 @@
   left: 0;
   background: #444; }
   #call-us-modal .wraped {
+    width: calc(100vw - (var(--side-bar-width) * 2));
+    height: 90vh;
+    margin: 5vh auto;
+    padding: 60px 60px;
     -webkit-box-shadow: 0 0 75px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 75px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 0 75px rgba(0, 0, 0, 0.5);
+    text-align: right;
+    position: relative;
+    overflow: hidden; }
+  #call-us-modal .x-btn {
+    position: absolute;
+    top: 2.5vh;
+    right: 1.6vw;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 3; }
   #call-us-modal .line {
     background: #ccc; }
 

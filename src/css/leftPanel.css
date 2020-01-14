@@ -6,8 +6,7 @@
   bottom: 0;
   left: 0;
   display: inline-block;
-  z-index: 3;
-  border: 1px solid red; }
+  z-index: 3; }
   #left-panel-container #left-panel {
     position: relative;
     width: 100%;
