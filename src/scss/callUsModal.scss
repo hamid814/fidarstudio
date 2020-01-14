@@ -16,6 +16,8 @@
     text-align: right;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .x-btn {
@@ -30,6 +32,68 @@
   
   .line {
     background: #ccc;
+  }
+
+  .header {
+    color: #ebd300;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .content {
+    flex-grow: 1;
+    display: flex;
+    color: #c4c4c4;
+    
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .form {
+      flex-basis: 60%;
+      
+      .title {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      
+      .form-group {
+        // border: 1px solid red;
+        border-bottom: 3px solid #ebd300;
+        width: 70%;
+        margin: auto;
+        margin-top: 15px;
+
+        
+        label {
+
+            span {
+              color: red;
+              margin-right: 7px;
+            }
+        }
+        
+        input {
+          color: #f4f4f4;
+          width: 100%;
+          background: transparent;
+          text-align: center;
+          font-size: 1.2rem;
+        }
+        
+        .submit-button {
+          border: 1px solid red !important;
+        }
+      }
+    }
+    
+    .information {
+      flex-basis: 40%;
+    }
   }
 }
 

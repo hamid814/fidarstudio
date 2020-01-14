@@ -15,7 +15,14 @@
     box-shadow: 0 0 75px rgba(0, 0, 0, 0.5);
     text-align: right;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   #call-us-modal .x-btn {
     position: absolute;
     top: 2.5vh;
@@ -26,6 +33,58 @@
     z-index: 3; }
   #call-us-modal .line {
     background: #ccc; }
+  #call-us-modal .header {
+    color: #ebd300;
+    text-align: center;
+    font-size: 2rem; }
+  #call-us-modal .content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #c4c4c4; }
+    #call-us-modal .content div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    #call-us-modal .content .form {
+      -ms-flex-preferred-size: 60%;
+      flex-basis: 60%; }
+      #call-us-modal .content .form .title {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem; }
+      #call-us-modal .content .form .form-group {
+        border-bottom: 3px solid #ebd300;
+        width: 70%;
+        margin: auto;
+        margin-top: 15px; }
+        #call-us-modal .content .form .form-group label span {
+          color: red;
+          margin-right: 7px; }
+        #call-us-modal .content .form .form-group input {
+          color: #f4f4f4;
+          width: 100%;
+          background: transparent;
+          text-align: center;
+          font-size: 1.2rem; }
+        #call-us-modal .content .form .form-group .submit-button {
+          border: 1px solid red !important; }
+    #call-us-modal .content .information {
+      -ms-flex-preferred-size: 40%;
+      flex-basis: 40%; }
 
 .call-us-off-d {
   display: none; }
