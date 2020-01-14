@@ -57,8 +57,8 @@
       
       .title {
         font-size: 1.4rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
       }
       
       .form-group {
@@ -74,7 +74,7 @@
         label {
 
           span {
-            color: red;
+            color: #d22;
             margin-right: 7px;
           }
         }
@@ -85,6 +85,7 @@
           background: transparent;
           text-align: center;
           font-size: 1.2rem;
+          outline: none;
         }
       }
 
@@ -99,23 +100,28 @@
     
     .information {
       flex-basis: 40%;
+      align-items: flex-end;
       
       div {
         display: inline-block;
       }
       
       .info-item {
-        border: 1px solid red;
+        margin-bottom: 3vh;
         
         span {
           display: inline-block;
           color: #ebd300;
         }
 
-        .map {
+        &.map {
+          width: 85%;
+          height: 50%;
           
           .map-box {
-            // border: 1px solid #ebd300;
+            width: 100%;
+            height: 100%;
+            background: #ebd300;
           }
         }
       }

@@ -70,7 +70,7 @@ setTimeout(() => {
 }, 500);
 
 // TEMP
-showCallUs();
+openMenuModal();
 
 // COMMENTS
 // add patterns to the design (lines or dots with rotations)

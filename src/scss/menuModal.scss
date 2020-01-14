@@ -7,19 +7,6 @@
   left: 0;
 }
 
-.menu-modal-on {
-  display: block;
-  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.menu-modal-off-a {
-  animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-.menu-modal-off-d {
-  display: none;
-}
-
 #menu-wraper {
   width: 100%;
   height: 100%;
@@ -40,34 +27,51 @@
   font-weight: 900;
   font-size: 5vh;
   cursor: default;
+
+  .menu-item-number {
+    display: inline-block;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    width: 50px;
+    transform: rotate(-90deg);
+    font-weight: 300;
+    letter-spacing: -4px;
+    padding-bottom: -9px;
+    font-size: 5.1vh;
+  }
+
+  .menu-item-title {
+    display: inline-block;
+    margin-right: 2vw;
+  }
+
+  &:hover {
+
+    .menu-item-number {
+      color: whitesmoke;
+      transform: translateX(2.5vw);
+      border-bottom: 1px solid #333;
+      width: 50px;
+      transition: all .35s cubic-bezier(.68, -.19, 0, 1.37);
+    }
+
+    .menu-item-title {
+      color: whitesmoke;
+      margin-right: 1vw;
+      transition: color .1s cubic-bezier(1, .5, .38, 1.2), margin-right .35s cubic-bezier(1, .5, .38, 1.2);
+    }
+  }
 }
 
-.menu-item-number {
-  display: inline-block;
-  margin-right: 2vw;
-  margin-left: 2vw;
-  width: 50px;
-  transform: rotate(-90deg);
-  font-weight: 300;
-  letter-spacing: -4px;
-  padding-bottom: -9px;
-  font-size: 5.1vh;
+.menu-modal-on {
+  display: block;
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.menu-item-title {
-  display: inline-block;
-  margin-right: 2vw;
+.menu-modal-off-a {
+  animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-.menu-item:hover .menu-item-number {
-  color: whitesmoke;
-  transform: translateX(2.5vw);
-  border-bottom: 1px solid #333;
-  width: 50px;
-  transition: all .35s cubic-bezier(.68, -.19, 0, 1.37);
-}
-.menu-item:hover .menu-item-title {
-  color: whitesmoke;
-  margin-right: 1vw;
-  transition: color .1s cubic-bezier(1, .5, .38, 1.2), margin-right .35s cubic-bezier(1, .5, .38, 1.2);
+.menu-modal-off-d {
+  display: none;
 }
