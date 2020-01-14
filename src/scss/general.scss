@@ -9,6 +9,10 @@
   transition: 0.3s;
 }
 
+:root {
+  --side-bar-width: 90px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -31,33 +35,33 @@ a, a:hover, a:active, a:visited {
 
 /* general sections styles: */
 .section {
-  border: 1px solid transparent;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   scroll-snap-align: center;
   position: relative;
   
   .wraped {
-    width: 90vw;
+    border: 1px solid red;
+    width: calc(100vw - (var(--side-bar-width) * 2));
     height: 90vh;
-    margin: 55px auto;
-    box-shadow: 0 0 75px rgba(0, 0, 0, .07);
+    margin: 5vh auto;
+    box-shadow: 0 0 75px rgba(0, 0, 0, .12);
     padding: 60px 60px;
     text-align: right;
     position: relative;
     overflow: hidden;
-  }
-}
 
-.wraped .dot {
-  width: 17px;
-  height: 17px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  background: #ebd300;
-  border-radius: 50px;
-  cursor: pointer;
+    .dot {
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      background: #ebd300;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  }
 }
 
 .section-header {
@@ -66,11 +70,11 @@ a, a:hover, a:active, a:visited {
   font-size: 6.2vh;
   top: 6.2vh;
   right: 4.6vw;
-}
 
-.section-header span {
-  display: block;
-  margin-right: 2.08vw;
+  span {
+    display: block;
+    margin-right: 2.08vw;
+  }
 }
 
 .section-body {
@@ -127,17 +131,17 @@ a, a:hover, a:active, a:visited {
 
 .right-list-item:hover {
   color: #ebd300;
-}
 
-.right-list-item:hover .right-list-item-number {
-  padding-left: 2vw;
-  padding-right: 0;
-  border-color: #000;
-}
+  .right-list-item-number {
+    padding-left: 2vw;
+    padding-right: 0;
+    border-color: #000;
+  }
 
-.right-list-item:hover .right-list-item-title {
-  padding-right: 0;
-  padding-left: 1.3vw;
+  .right-list-item-title {
+    padding-right: 0;
+    padding-left: 1.3vw;
+  }
 }
 
 .section-backtext {
@@ -148,13 +152,13 @@ a, a:hover, a:active, a:visited {
   top: vh;
   z-index: -3;
   cursor: default;
-}
 
-.section-backtext span {
-  display: block;
-  font-size: 30vh;
-  margin-top: -40vh;
-  margin-left: -60vw;
+  span {
+    display: block;
+    font-size: 30vh;
+    margin-top: -40vh;
+    margin-left: -60vw;
+  }
 }
 
 /* call us hover effect: */

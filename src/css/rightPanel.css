@@ -1,12 +1,14 @@
 #right-panel-container {
   position: fixed;
-  right: 0;
-  display: inline-block;
+  width: calc(var(--side-bar-width) - 7px);
+  /* 7px for the scroll bar */
+  height: 100vh;
   top: 0;
   bottom: 0;
-  width: 100px;
-  height: 100%;
-  z-index: 3; }
+  right: 0;
+  display: inline-block;
+  z-index: 3;
+  border: 1px solid red; }
   #right-panel-container #right-panel {
     position: relative;
     width: 100px;

@@ -1,27 +1,26 @@
 #left-panel-container {
-  text-align: center;
   position: fixed;
-  left: 0;
-  display: inline-block;
+  width: var(--side-bar-width);
+  height: 100vh;
   top: 0;
   bottom: 0;
-  width: 100px;
-  height: 100%;
+  left: 0;
+  display: inline-block;
   z-index: 3;
   border: 1px solid red; }
   #left-panel-container #left-panel {
     position: relative;
     width: 100%;
-    height: 100%;
-    border: 1px solid blue; }
+    height: 100%; }
   #left-panel-container #logo {
     position: absolute;
-    top: 0;
+    top: -20px;
+    left: -2px;
     -webkit-transform: scaleY(0.5) scaleX(0.5);
     transform: scaleY(0.5) scaleX(0.5); }
   #left-panel-container #page-nav {
     position: absolute;
-    left: 50px;
+    left: calc((var(--side-bar-width) - 16px) / 2);
     bottom: 30px; }
     #left-panel-container #page-nav .page-number-section {
       width: 16px;
