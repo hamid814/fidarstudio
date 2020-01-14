@@ -5,6 +5,24 @@
   z-index: 5;
   top: 0;
   left: 0;
+
+  #call-us {
+    transform: rotateZ(-90deg);
+    position: absolute;
+    bottom: 90px;
+    right: 50px;
+    right: calc((var(--side-bar-width) - 25px) / 2 * -1);
+    font-weight: 900;
+    letter-spacing: 0px;
+    font-size: 1.6em;
+    width: 100px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .callus-slide:hover:before{
+    color:whitesmoke;
+  }
 }
 
 #menu-wraper {
@@ -12,14 +30,14 @@
   height: 100%;
   background: #ebd300;
   position: relative;
-}
-
-.menu-menu-container {
-  position: absolute;
-  top: 20vh;
-  left: 30vw;
-  width: 40vw;
-  height: 40vh;
+  
+  .menu-menu-container {
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+    width: 40vw;
+    height: 40vh;
+  }
 }
 
 .menu-item {

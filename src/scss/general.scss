@@ -52,9 +52,9 @@ a, a:hover, a:active, a:visited {
     overflow: hidden;
 
     .dot {
+      position: absolute;
       width: 0;
       height: 0;
-      position: absolute;
       border: 18px solid #ebd300;
       border-top-color: transparent;
       border-left-color: transparent;
@@ -64,6 +64,7 @@ a, a:hover, a:active, a:visited {
       background: transparent;
       border-radius: 50px;
       cursor: pointer;
+      z-index: 1;
     }
   }
 }
@@ -105,46 +106,46 @@ a, a:hover, a:active, a:visited {
 .section-right {
   position: absolute;
   top: 30vh;
-  left: 20.2vw;
+  left: 14vw;
   font-size: 3.4vh;
   cursor: pointer;
-}
+  
+  .right-list {
+    display: inline-block;
+    margin-right: 4vw;
+    
+    .right-list-item {
+      margin: 2.6vh 0;
 
-.section-right .right-list {
-  display: inline-block;
-  margin-right: 4vw;
-}
+      &:hover {
+        color: #ebd300;
 
-.right-list-item {
-  margin: 2.6vh 0;
-}
+        .right-list-item-number {
+          padding-left: 2vw;
+          padding-right: 0;
+          border-color: #000;
+        }
 
-.right-list-item-number {
-  float: right;
-  margin-left: 2vw;
-  border-left: 0.19vh solid #ebd300;
-  padding-right: 1vw;
-  padding-left: 1vw;
-}
+        .right-list-item-title {
+          padding-right: 0;
+          padding-left: 1.3vw;
+        }
+      }
+      
+      .right-list-item-number {
+        float: right;
+        margin-left: 2vw;
+        border-left: 0.19vh solid #ebd300;
+        padding-right: 1vw;
+        padding-left: 1vw;
+      }
 
-.right-list-item-title {
-  padding-bottom: 1vh;
-  padding-right: 1.3vw;
-  padding-left: 0vw;
-}
-
-.right-list-item:hover {
-  color: #ebd300;
-
-  .right-list-item-number {
-    padding-left: 2vw;
-    padding-right: 0;
-    border-color: #000;
-  }
-
-  .right-list-item-title {
-    padding-right: 0;
-    padding-left: 1.3vw;
+      .right-list-item-title {
+        padding-bottom: 1vh;
+        padding-right: 1.3vw;
+        padding-left: 0vw;
+      }
+    }
   }
 }
 
