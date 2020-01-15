@@ -37,30 +37,33 @@
         #left-panel-container #page-nav .page-number-section:hover .page-number {
           display: inline-block; }
         #left-panel-container #page-nav .page-number-section:hover .page-number-desc {
+          position: absolute;
           display: inline-block;
           -webkit-animation: pagenumberdescanim 0.3s ease-in-out;
-          animation: pagenumberdescanim 0.3s ease-in-out; }
-    #left-panel-container #page-nav .page-number {
-      display: none;
-      margin: 0 0 0 -6px;
-      cursor: default;
-      font-weight: 900;
-      font-size: 0.95em;
-      cursor: pointer; }
-    #left-panel-container #page-nav .page-number-dot {
-      width: 8px;
-      height: 8px;
-      background: #222;
-      border-radius: 50px;
-      -webkit-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
-      box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
-      cursor: pointer; }
-    #left-panel-container #page-nav .page-number-desc {
-      position: absolute;
-      width: 100px;
-      top: 0px;
-      left: 30px;
-      text-align: left;
-      color: #444;
-      padding: 1px 4px;
-      display: none; }
+          animation: pagenumberdescanim 0.3s ease-in-out;
+          top: 0 !important; }
+      #left-panel-container #page-nav .page-number-section.active .page-number-dot {
+        background: red; }
+      #left-panel-container #page-nav .page-number-section .page-number {
+        display: none;
+        margin: 0 0 0 -6px;
+        cursor: default;
+        font-weight: 900;
+        font-size: 0.95em;
+        cursor: pointer; }
+      #left-panel-container #page-nav .page-number-section .page-number-dot {
+        width: 8px;
+        height: 8px;
+        background: #222;
+        border-radius: 50px;
+        -webkit-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer; }
+      #left-panel-container #page-nav .page-number-section .page-number-desc {
+        width: 100px;
+        top: 0px;
+        left: 30px;
+        text-align: left;
+        color: #444;
+        padding: 1px 4px;
+        display: none; }

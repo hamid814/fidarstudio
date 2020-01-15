@@ -7,15 +7,20 @@ const callUsModal = document.querySelector('#call-us-modal');
 const menuModal = document.querySelector('#menu-modal');
 const xBtns = document.querySelectorAll('.x-btn');
 const mountModal = document.querySelector('#mount-modal');
+const pageDotBtns = document.querySelectorAll('.page-number-section');
 
 // // FUNCTIONAL VARS:
 let activeId = 1;
 let menuIsOn = false;
 
 // // FUNCTIONS
-const whereIsActive = () => {
+const whereIsActive = e => {
   document.querySelector('#section-' + activeId).classList.remove('deactive-section');
   document.querySelector('#section-' + activeId).classList.add('active-section');
+  pageDotBtns.forEach(dot => {
+    dot.classList.remove('active')
+  })
+  document.querySelector(`#dot-number-${e.target.attributes.name.value}`).classList.add('active')
 }
 
 const openMenuModal = () => {
@@ -69,6 +74,9 @@ xBtns.forEach(btn => {
 })
 cornerDots.forEach(dot => {
   dot.addEventListener('click', showMount);
+})
+pageDotBtns.forEach(dot => {
+  dot.addEventListener('click', whereIsActive);
 })
 
 // TEMP

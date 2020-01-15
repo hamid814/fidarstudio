@@ -33,7 +33,7 @@
       text-align: center;
       cursor: pointer;
       position: relative;
-
+      
       &:hover {
         height: 35px;
         margin-top: -7px;
@@ -48,39 +48,47 @@
         }
         
         .page-number-desc {
+          position: absolute;
           display: inline-block;
           animation: pagenumberdescanim 0.3s ease-in-out;
+          top: 0 !important;
         }
       }
-    }
-    
-    .page-number {
-      display: none;
-      margin: 0 0 0 -6px;
-      cursor: default;
-      font-weight: 900;
-      font-size: 0.95em;
-      cursor: pointer;
-    }
-    
-    .page-number-dot {
-      width: 8px;
-      height: 8px;
-      background: #222;
-      border-radius: 50px;
-      box-shadow: -2px 2px 5px rgba(0, 0, 0, .5);
-      cursor: pointer;
-    }
-    
-    .page-number-desc {
-      position: absolute;
-      width: 100px;
-      top: 0px;
-      left: 30px;
-      text-align: left;
-      color: #444;
-      padding: 1px 4px;
-      display: none;
+      
+      &.active {
+        
+        .page-number-dot {
+          background: red;
+        }
+      }
+      
+      .page-number {
+        display: none;
+        margin: 0 0 0 -6px;
+        cursor: default;
+        font-weight: 900;
+        font-size: 0.95em;
+        cursor: pointer;
+      }
+      
+      .page-number-dot {
+        width: 8px;
+        height: 8px;
+        background: #222;
+        border-radius: 50px;
+        box-shadow: -2px 2px 5px rgba(0, 0, 0, .5);
+        cursor: pointer;
+      }
+      
+      .page-number-desc {
+        width: 100px;
+        top: 0px;
+        left: 30px;
+        text-align: left;
+        color: #444;
+        padding: 1px 4px;
+        display: none;
+      }
     }
   }
 }
