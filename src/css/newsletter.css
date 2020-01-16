@@ -1,0 +1,7 @@
+.newsletter .wraped {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  .newsletter .wraped .newsletter-item {
+    border: 1px solid red; }
