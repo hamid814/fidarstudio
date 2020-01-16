@@ -1,13 +1,81 @@
 .newsletter {
 
   .wraped {
-    padding: 0;
+    padding: 1rem;
     display: grid;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
     .newsletter-item {
-      border: 1px solid red;
+      position: relative;
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column-reverse;
+      border: 1px solid #ebd300;
+      // transform: skew(15deg);
+      
+      &:hover {
+        background: #ebd300;
+        
+        .button {
+          background: #3338;
+        }
+      }
+
+      &:nth-child(odd) {
+        border: 1px solid blue;
+
+        .content {
+
+          .side-layer {
+            left: 0 !important;
+            // border-right-color: transparent;
+          }
+        }
+      }
+      
+      &:nth-child(even) {
+        border: 1px solid green;
+        
+        .content {
+          
+          .side-layer {
+            right: 0 !important;
+            // border-left-color: transparent;
+          }
+        }
+      }
+      
+      .content {
+        // transform: skew(-15deg);
+        
+        .side-layer {
+          position: absolute;
+          top: 0;
+          width: 20%;
+          height: 100%;
+          border: 5px solid red;
+          transform: skew(15deg);
+          // z-index: 0;
+        }
+        
+        .title {
+          cursor: default;
+          font-size: 170%;
+        }
+        
+        .text {
+          cursor: default;
+        }
+        
+        .button {
+          padding: 0.2rem 3rem;
+          float: left;
+          background: #ebd300;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
