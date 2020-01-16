@@ -20,20 +20,27 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    .portfolio .wraped .item:hover .anim-layer {
+      -webkit-animation: hjsdjvnjhdvhj 1s ease-in-out;
+      animation: hjsdjvnjhdvhj 1s ease-in-out; }
     .portfolio .wraped .item:hover .back-layer {
       opacity: 0.3; }
     .portfolio .wraped .item:hover .desc {
       opacity: 1;
-      -webkit-transition-delay: 0.1s;
-      transition-delay: 0.1s; }
+      -webkit-transition-delay: 1.1s;
+      transition-delay: 1.1s; }
     .portfolio .wraped .item:hover .button {
       opacity: 1;
-      -webkit-transition-delay: 0.2s;
-      transition-delay: 0.2s;
+      -webkit-transition-delay: 1.2s;
+      transition-delay: 1.2s;
       margin-top: 0.3rem; }
-    .portfolio .wraped .item .title {
-      font-size: 2.5rem;
-      cursor: default; }
+    .portfolio .wraped .item .anim-layer {
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #ebd300;
+      z-index: 5; }
     .portfolio .wraped .item .back-layer {
       position: absolute;
       z-index: -1;
@@ -41,6 +48,9 @@
       opacity: 0;
       width: 100%;
       height: 100%; }
+    .portfolio .wraped .item .title {
+      font-size: 2.5rem;
+      cursor: default; }
     .portfolio .wraped .item .desc {
       opacity: 0;
       margin-top: 3rem;
@@ -52,3 +62,25 @@
       opacity: 0;
       margin-bottom: 15vh;
       cursor: pointer; }
+
+@-webkit-keyframes hjsdjvnjhdvhj {
+  0% {
+    width: 0;
+    margin-left: 0; }
+  50% {
+    width: 100%;
+    margin-left: 0; }
+  100% {
+    width: 0;
+    margin-left: 100%; } }
+
+@keyframes hjsdjvnjhdvhj {
+  0% {
+    width: 0;
+    margin-left: 0; }
+  50% {
+    width: 100%;
+    margin-left: 0; }
+  100% {
+    width: 0;
+    margin-left: 100%; } }

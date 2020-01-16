@@ -2,6 +2,19 @@
   // background: #ebd300;
 
   .wraped {
-    background: #ebd300;
+    position: relative;
+    padding: 0;
+
+    .background { 
+      position: absolute;
+      background: #ebd30067;
+      bottom: 0;
+      border: 50vw solid #ebd300c2;
+      width: 100%;
+      height: 100%;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
   }
 }

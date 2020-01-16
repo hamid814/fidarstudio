@@ -83,3 +83,4 @@ pageDotBtns.forEach(dot => {
 
 // COMMENTS
 // add patterns to the design (lines or dots with rotations)
+// add animation with sass to portfolio for entrance to page 

@@ -91,9 +91,11 @@
       }
       
       .information {
-        border: 1px solid red;
-
+        padding: 15%;
         
+        .name {
+          color: #ebd300;
+        }
       }
     }
   }
