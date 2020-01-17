@@ -37,11 +37,11 @@
       border: 2px solid #ebd300;
       z-index: -1; }
       .newsletter .wraped .newsletter-item .content .side-layer.right {
-        -webkit-transform: skew(-15deg);
-        transform: skew(-15deg); }
-      .newsletter .wraped .newsletter-item .content .side-layer.left {
         -webkit-transform: skew(15deg);
         transform: skew(15deg); }
+      .newsletter .wraped .newsletter-item .content .side-layer.left {
+        -webkit-transform: skew(-15deg);
+        transform: skew(-15deg); }
     .newsletter .wraped .newsletter-item .content .title {
       cursor: default;
       font-size: 170%; }

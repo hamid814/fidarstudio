@@ -63,11 +63,11 @@
           z-index: -1;
           
           &.right {
-            transform: skew(-15deg);
+            transform: skew(15deg);
           }
           
           &.left {
-            transform: skew(15deg);
+            transform: skew(-15deg);
           }
         }
         
