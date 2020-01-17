@@ -1,0 +1,86 @@
+.portfolio .wraped {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .portfolio .wraped .item {
+    position: relative;
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .portfolio .wraped .item:hover .anim-layer {
+      -webkit-animation: hjsdjvnjhdvhj 1s ease-in-out;
+      animation: hjsdjvnjhdvhj 1s ease-in-out; }
+    .portfolio .wraped .item:hover .back-layer {
+      opacity: 0.3; }
+    .portfolio .wraped .item:hover .desc {
+      opacity: 1;
+      -webkit-transition-delay: 0.7s;
+      transition-delay: 0.7s; }
+    .portfolio .wraped .item:hover .button {
+      opacity: 1;
+      -webkit-transition-delay: 0.8s;
+      transition-delay: 0.8s;
+      margin-top: 0.3rem; }
+    .portfolio .wraped .item .anim-layer {
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #ebd300;
+      z-index: 5; }
+    .portfolio .wraped .item .back-layer {
+      position: absolute;
+      z-index: -1;
+      background: #ebd300;
+      opacity: 0;
+      width: 100%;
+      height: 100%; }
+    .portfolio .wraped .item .title {
+      font-size: 2.5rem;
+      cursor: default; }
+    .portfolio .wraped .item .desc {
+      opacity: 0;
+      margin-top: 3rem;
+      cursor: default; }
+    .portfolio .wraped .item .button {
+      background: #ebd300;
+      padding: 0.25rem 1.6rem;
+      margin-top: -1.1rem;
+      opacity: 0;
+      margin-bottom: 15vh;
+      cursor: pointer; }
+
+@-webkit-keyframes hjsdjvnjhdvhj {
+  0% {
+    width: 0;
+    margin-left: 0; }
+  50% {
+    width: 100%;
+    margin-left: 0; }
+  100% {
+    width: 0;
+    margin-left: 100%; } }
+
+@keyframes hjsdjvnjhdvhj {
+  0% {
+    width: 0;
+    margin-left: 0; }
+  50% {
+    width: 100%;
+    margin-left: 0; }
+  100% {
+    width: 0;
+    margin-left: 100%; } }
