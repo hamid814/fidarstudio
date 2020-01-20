@@ -32,7 +32,8 @@
       align-items: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      width: 100%; }
       .services .wraped .column .row:hover .button {
         opacity: 1;
         margin-top: 0.5rem; }
