@@ -39,6 +39,7 @@ const close = () => {
   callUsModal.classList.remove('call-us-on');
   document.body.classList.remove('no-scroll');
   setTimeout(() => {
+    menuModal.classList.remove('menu-modal-off-a');
     menuModal.classList.add('menu-modal-off-d');
     mountModal.classList.add('mount-off-d');
     callUsModal.classList.add('call-us-off-d');

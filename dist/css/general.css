@@ -161,18 +161,18 @@ a, a:hover, a:active, a:visited {
         padding-left: 0vw; }
 
 .section-backtext {
-  position: absolute;
-  font-size: 50vh;
-  opacity: 0.08;
-  letter-spacing: -20px;
-  top: vh;
+  margin-left: -13%;
+  margin-top: 13%;
+  color: #9992;
+  font-size: 1400%;
+  line-height: 100%;
+  cursor: default;
+  text-align: left;
   z-index: -3;
-  cursor: default; }
+  -webkit-filter: blur(3px);
+  filter: blur(3px); }
   .section-backtext span {
-    display: block;
-    font-size: 30vh;
-    margin-top: -40vh;
-    margin-left: -60vw; }
+    display: block; }
 
 /* call us hover effect: */
 .callus-slide {
@@ -292,12 +292,6 @@ a, a:hover, a:active, a:visited {
 .deactive-section .animate {
   opacity: 0; }
 
-.deactive-section .section-backtext {
-  opacity: 0; }
-
-.active-section .section-backtext {
-  opacity: 0.08; }
-
 .active-section .animate {
   opacity: 1; }
 
@@ -316,7 +310,3 @@ a, a:hover, a:active, a:visited {
 .active-section .anim-4 {
   -webkit-animation: comeRight 1.3s ease-in;
   animation: comeRight 1.3s ease-in; }
-
-.active-section .section-backtext {
-  -webkit-animation: fadeInTo1 1.3s ease-in;
-  animation: fadeInTo1 1.3s ease-in; }
