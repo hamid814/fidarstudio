@@ -14,6 +14,22 @@
     right: 50px;
     opacity: 0.8; } }
 
+@-webkit-keyframes socialmediadescaniminPage {
+  from {
+    left: 40px;
+    opacity: 0; }
+  to {
+    left: 50px;
+    opacity: 0.8; } }
+
+@keyframes socialmediadescaniminPage {
+  from {
+    left: 40px;
+    opacity: 0; }
+  to {
+    left: 50px;
+    opacity: 0.8; } }
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0; }
