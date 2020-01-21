@@ -1,0 +1,131 @@
+.page.about {
+  
+  .page-header {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 600%;
+    margin-bottom: 70px;
+    
+    .back-layer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: var(--the-color);
+      top: 0;
+      
+      &.left {
+        transform: skew(25deg);
+        left: -85%;
+      }
+      
+      &.right {
+        transform: skew(-25deg);
+        right: -85%;
+      }
+    }
+  }
+  
+  .news-item {
+    position: relative;
+    width: 80%;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    
+    &:nth-child(odd) {
+      margin-left: 20%;
+
+      .news-button {
+        background: var(--the-color);
+      }
+    }
+    
+    &:nth-child(even) {
+      
+      .news-back-layer {
+        transform: skew(35deg);
+        left: -90%;
+      }
+    }
+    
+    .news-back-layer {
+      position: absolute;
+      z-index: -1;
+      height: 110%;
+      top: -5%;
+      left: -10%;
+      width: 200%;
+      background: var(--the-color);
+      transform: skew(-35deg);
+    }
+
+    .news-title {
+      font-size: 160%;
+      color: #333c;
+      filter: brightness(75%);
+      cursor: pointer;
+      margin: {
+        bottom: 20px;
+        right: 30px;
+      }
+    }
+
+    .news-text {
+      margin-bottom: 30px;
+    }
+    
+    .news-button {
+      width: 20%;
+      margin-left: 13%;
+      background: var(--the-color);
+      text-align: center;
+      float: left;
+      padding: 0.1rem;
+      cursor: pointer;
+      filter: brightness(75%);
+      
+      &:hover {
+        filter: brightness(100%);
+      }
+    }
+    
+    .news-footer {
+      position: absolute;
+      width: 30%;
+      bottom: 0;
+      right: 0;
+      display: flex;
+
+      .news-date {
+        display: inline-block;
+        color: #3337;
+        cursor: default;
+        
+        &:hover {
+          
+          color: #333e;
+        }
+      }
+      
+      .news-auther {
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: 15px;
+        cursor: pointer;
+        color: #3337;
+        
+        &:hover {
+          color: #333e;
+        }
+      }
+    }
+  }
+}

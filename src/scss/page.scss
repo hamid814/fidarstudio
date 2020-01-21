@@ -1,45 +1,49 @@
 .page {
+  height: initial !important;
 
-  &.wraped {
-    display: flex;
-    padding: 0;
+  &.footer {
     
-    .image-container {
-      flex-basis: 40%;
-      width: 30%;
-      padding: 1.5rem;
-
-      .image {
-        width: 100%;
-        height: 100%;
-        background: #ebd300;
-      }
-    }
-    
-    .content {
-      flex-basis: 60%;
+    .wraped {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 4rem;
       
-      .title {
-        font-size: 170%;
-        color: #ebd300;
+      .contact {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column-reverse;
+
+        span {
+          color: var(--the-color);
+        }
       }
       
-      .text {
-        padding: 0.1rem;
-      }
-      
-      .button {
-        background: #ebd300;
-        padding: 0.2rem;
-        text-align: center;
-        width: 20%;
-        float: left;
-        cursor: pointer;
+      .footer-list-container {
+        flex-basis: 50%;
+        display: flex;
+        
+        .list {
+          flex-basis: 50%;
+        }
+
+        .list-title {
+          color: var(--the-color);
+          font-size: 150%;
+        }
+        
+        .list-item {
+          margin-right: 5px;
+          cursor: pointer;
+
+          &:hover {
+            color: var(--the-color);
+          }
+        }
       }
     }
   }
+  
+  .wraped {
+    height: initial !important;
+  }
+
+  
 }
