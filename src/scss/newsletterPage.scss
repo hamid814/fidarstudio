@@ -1,4 +1,11 @@
-.page.about {
+.page.newsletter {
+
+  .wraped {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   
   .page-header {
     position: relative;
