@@ -21,6 +21,10 @@
             width: 80%;
             background: #ebd300;
           }
+
+          .header {
+            opacity: 1;
+          }
           
           .button {
             background: #3338;
@@ -68,6 +72,41 @@
           
           &.left {
             transform: skew(-15deg);
+          }
+        }
+        
+        .header {
+          position: absolute;
+          top: 5%;
+          display: flex;
+          opacity: 0;
+          
+          &.right {
+            right: 10%;
+          }
+          
+          &.left {
+            left: 10%;
+          }
+          
+          .date {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #4449;
+            cursor: default;
+            
+            &:hover {
+              color: #444e;
+            }
+          }
+          
+          .auther {
+            color: #4449;
+            cursor: pointer;
+            
+            &:hover {
+              color: #444e;
+            }
           }
         }
         
