@@ -44,7 +44,8 @@
   text-align: right;
   font-weight: 900;
   font-size: 5vh;
-  cursor: default;
+  cursor: pointer;
+  margin-bottom: 2.5%;
 
   .menu-item-number {
     display: inline-block;
@@ -53,7 +54,6 @@
     width: 50px;
     transform: rotate(-90deg);
     font-weight: 300;
-    letter-spacing: -4px;
     padding-bottom: -9px;
     font-size: 5.1vh;
   }
@@ -84,6 +84,35 @@
 .menu-modal-on {
   display: block;
   animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  
+  .call-us {
+    animation: callUsComeUp 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1s;
+  }
+  
+  .menu-item {
+    animation: menuItemAnim 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+    &:nth-child(1) {
+      animation-delay: 0.3s;
+    }
+    
+    &:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    
+    &:nth-child(3) {
+      animation-delay: 0.5s;
+    }
+    
+    &:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+    
+    &:nth-child(5) {
+      animation-delay: 0.7s;
+    }
+  }
 }
 
 .menu-modal-off-a {
@@ -92,4 +121,26 @@
 
 .menu-modal-off-d {
   display: none;
+}
+
+@keyframes callUsComeUp {
+  0% {
+    opacity: 0;
+    bottom: 20px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 90px;
+  }
+}
+
+@keyframes menuItemAnim {
+  0% {
+    opacity: 0;
+    margin-right: 50px;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0px;
+  }
 }
