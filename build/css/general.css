@@ -12,7 +12,8 @@
   transition: 0.3s; }
 
 :root {
-  --side-bar-width: 90px; }
+  --side-bar-width: 90px;
+  --the-color: #ebd300; }
 
 html {
   scroll-behavior: smooth; }

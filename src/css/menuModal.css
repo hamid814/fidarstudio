@@ -90,9 +90,6 @@
     .menu-modal-on .menu-item:nth-child(4) {
       -webkit-animation-delay: 0.6s;
       animation-delay: 0.6s; }
-    .menu-modal-on .menu-item:nth-child(5) {
-      -webkit-animation-delay: 0.7s;
-      animation-delay: 0.7s; }
 
 .menu-modal-off-a {
   -webkit-animation: slide-out-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
