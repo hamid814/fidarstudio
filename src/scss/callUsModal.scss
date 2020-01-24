@@ -35,7 +35,7 @@
   }
 
   .header {
-    color: #ebd300;
+    color: var(--the-color);
     text-align: center;
     font-size: 2rem;
   }
@@ -62,7 +62,7 @@
       }
       
       .form-group {
-        border-bottom: 3px solid #ebd300;
+        border-bottom: 3px solid var(--the-color);
         width: 70%;
         margin: auto;
         margin-top: 15px;
@@ -90,7 +90,7 @@
       }
 
       input[type="submit"] {
-        background: #ebd300;
+        background: var(--the-color);
         color: #333;
         width: 70%;
         border: none;
@@ -111,7 +111,7 @@
         
         span {
           display: inline-block;
-          color: #ebd300;
+          color: var(--the-color);
         }
 
         &.map {
@@ -121,7 +121,7 @@
           .map-box {
             width: 100%;
             height: 100%;
-            background: #ebd300;
+            background: var(--the-color);
           }
         }
       }
