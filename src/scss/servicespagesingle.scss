@@ -1,8 +1,71 @@
 .page.services.single {
 
   .service-header {
+    width: 100%;
+    height: 45vh;
+    background: var(--the-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    .title {
+      font-size: 700%;
+      font-weight: 100;
+    }
+    
+    .sub-title {
+      color: #333e;
+
+      span {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: var(--the-color);
+        background: #333c;
+        
+        &:hover {
+          color: #333e;
+          background: var(--the-color);
+        }
+      }
+    }
+  }
+
+  .content {
+    margin-top: 5vh;
+    padding: {
+      right: 50px;
+      left: 50px;
+    }
+    
+    .page-row {
+      display: flex;
+      height: 35vh;
+      
+      .page-column {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 33.33%;
+
+        .title {
+          color: var(--the-color);
+          filter: brightness(90%);
+          font-size: 350%;
+          transform: translate(40px, -30px);
+        }
+        
+        .image {
+          width: 100%;
+          height: 100%;
+          background: var(--the-color); 
+        }
+      }
+    }
+  }
+
+  .service-footer {
+    border: 1px solid red;
   }
 }
