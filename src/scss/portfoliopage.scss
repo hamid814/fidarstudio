@@ -1,0 +1,113 @@
+.page.services {
+
+  .wraped {
+    display: block;
+    padding: 30px;
+  }
+
+  .header {
+    width: 100%;
+    height: 35vh;
+    background: var(--the-color);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    cursor: default;
+    
+    span {
+      cursor: default;
+      margin: 1.2rem;
+      padding: 0.2rem;
+      background: #3339;
+      color: var(--the-color);
+      
+      &:hover {
+        background: var(--the-color);
+        color: #333c;
+      }
+    }
+  }
+  
+  .services-menu {
+    margin-top: 14px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+    .item {
+      color: var(--the-color);
+      padding: 0.3rem;
+      text-align: center;
+      flex-basis: calc(100% / 7);
+      cursor: pointer;
+
+      &:hover {
+        background: var(--the-color);
+        color: #333c; 
+      }
+    }
+  }
+
+  .service-item {
+    position: relative;
+    margin-bottom: 8%;
+    display: flex;
+    flex-direction: row;
+    
+    &.reverse {
+      flex-direction: row-reverse;
+      
+      .image {
+        left: calc(100% - 200px);
+        transform: skewY(-10deg);
+      }
+      
+      .service-content {
+        margin-right: 210px;
+        
+        .button {
+          float: left;
+        }
+      }
+    }
+    
+    .image {
+      position: absolute;
+      width: 200px;
+      height: 200%;
+      top: -50%;
+      left: 0;
+      background: var(--the-color);
+      transform: skewY(10deg);
+    }
+    
+    .service-content {
+      margin-left: 210px;
+      
+      .title {
+        color: var(--the-color);
+        font-size: 150%;
+        font-weight: 700;
+      }
+
+      .text {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      .button {
+        margin-top: 10px;
+        background: var(--the-color);
+        float: right;
+        padding: 0.1rem 3rem;
+        cursor: pointer;
+
+        &:hover {
+          color: #3337;
+        }
+      }
+    }
+  }
+}
