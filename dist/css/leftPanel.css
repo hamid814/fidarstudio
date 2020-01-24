@@ -7,6 +7,32 @@
   left: 0;
   display: inline-block;
   z-index: 3; }
+  #left-panel-container.page .social-media {
+    position: absolute;
+    bottom: 40px;
+    left: calc((var(--side-bar-width) - 24px) / 2);
+    cursor: pointer; }
+    #left-panel-container.page .social-media .social-media-icon {
+      position: relative;
+      width: 48px;
+      height: 48px; }
+      #left-panel-container.page .social-media .social-media-icon:hover .social-media-icon-desc {
+        display: inline-block;
+        -webkit-animation: socialmediadescaniminPage 0.5s ease-in-out;
+        animation: socialmediadescaniminPage 0.5s ease-in-out; }
+      #left-panel-container.page .social-media .social-media-icon .social-media-icon-desc {
+        display: none;
+        position: absolute;
+        left: 50px;
+        width: 120px;
+        top: 12px;
+        background: #444;
+        color: #ddd;
+        padding: 2px 5px;
+        opacity: 0.8;
+        text-align: center;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
   #left-panel-container #left-panel {
     position: relative;
     width: 100%;

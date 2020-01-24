@@ -12,7 +12,8 @@
   transition: 0.3s; }
 
 :root {
-  --side-bar-width: 90px; }
+  --side-bar-width: 90px;
+  --the-color: #ebd300; }
 
 html {
   scroll-behavior: smooth; }
@@ -137,7 +138,8 @@ a, a:hover, a:active, a:visited {
   cursor: pointer; }
   .section-right .right-list {
     display: inline-block;
-    margin-right: 4vw; }
+    margin-right: 4vw;
+    z-index: 1; }
     .section-right .right-list .right-list-item {
       margin: 2.6vh 0; }
       .section-right .right-list .right-list-item:hover {
@@ -161,6 +163,7 @@ a, a:hover, a:active, a:visited {
         padding-left: 0vw; }
 
 .section-backtext {
+  position: absolute;
   margin-left: -13%;
   margin-top: 13%;
   color: #9992;

@@ -17,6 +17,8 @@
     .newsletter .wraped .newsletter-item:hover .content .side-layer {
       width: 80%;
       background: #ebd300; }
+    .newsletter .wraped .newsletter-item:hover .content .header {
+      opacity: 1; }
     .newsletter .wraped .newsletter-item:hover .content .button {
       background: #3338; }
     .newsletter .wraped .newsletter-item:nth-child(odd) {
@@ -42,6 +44,29 @@
       .newsletter .wraped .newsletter-item .content .side-layer.left {
         -webkit-transform: skew(-15deg);
         transform: skew(-15deg); }
+    .newsletter .wraped .newsletter-item .content .header {
+      position: absolute;
+      top: 5%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      opacity: 0; }
+      .newsletter .wraped .newsletter-item .content .header.right {
+        right: 10%; }
+      .newsletter .wraped .newsletter-item .content .header.left {
+        left: 10%; }
+      .newsletter .wraped .newsletter-item .content .header .date {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #4449;
+        cursor: default; }
+        .newsletter .wraped .newsletter-item .content .header .date:hover {
+          color: #444e; }
+      .newsletter .wraped .newsletter-item .content .header .auther {
+        color: #4449;
+        cursor: pointer; }
+        .newsletter .wraped .newsletter-item .content .header .auther:hover {
+          color: #444e; }
     .newsletter .wraped .newsletter-item .content .title {
       cursor: default;
       font-size: 170%; }
