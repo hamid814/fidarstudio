@@ -21,7 +21,7 @@
       -webkit-animation: menubtncontaineranim 6s cubic-bezier(1, 1, 1, 1) infinite;
       animation: menubtncontaineranim 6s cubic-bezier(1, 1, 1, 1) infinite; }
       #right-panel-container #menu-btn .menu-btn-container:hover .menu-btn-line {
-        background: #ebd300; }
+        background: var(--the-color); }
       #right-panel-container #menu-btn .menu-btn-container .menu-btn-line {
         height: 3px;
         width: 23px;

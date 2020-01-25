@@ -8,4 +8,4 @@
   background-color: #F5F5F5; }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ebd300; }
+  background-color: var(--the-color); }
