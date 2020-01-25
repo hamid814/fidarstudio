@@ -42,10 +42,14 @@
       text-align: center;
       flex-basis: calc(100% / 7);
       cursor: pointer;
-
+      
       &:hover {
         background: var(--the-color);
         color: #333c; 
+      }
+      
+      div {
+        cursor: pointer;
       }
     }
   }
@@ -81,6 +85,9 @@
       left: 0;
       background: var(--the-color);
       transform: skewY(10deg);
+      background-size: auto auto;
+      background-color: #ebd30044;
+      background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #ebd300 10px, #ebd300 20px );
     }
     
     .service-content {

@@ -8,6 +8,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: auto auto;
+    background-color: #ebd30044;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #ebd300 10px, #ebd300 20px );
 
     .title {
       font-size: 700%;
