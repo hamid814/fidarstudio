@@ -88,7 +88,7 @@
     transform: skewY(10deg);
     background-size: auto auto;
     background-color: #ebd30044;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #ebd300 10px, #ebd300 20px); }
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, var(--the-color) 10px, var(--the-color) 20px); }
   .page.services .service-item .service-content {
     margin-left: 210px; }
     .page.services .service-item .service-content .title {

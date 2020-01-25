@@ -43,11 +43,9 @@
   }
 
   .content {
-    border: 1px solid red;
     
     .details {
       display: flex;
-      border: 1px solid blue;
       
       .image {
         flex-basis: 35%;
@@ -58,17 +56,39 @@
         flex-basis: 65%;
 
         .info-title {
-          color: red;
+          font-size: 160%;
+          color: var(--the-color);
+          transform: translateX(-20px);
         }
-
+        
         .info-details {
-
+          margin-top: 1.5rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          
+          .info-details-item {
+            display: flex;
+            flex-direction: row-reverse;
+            
+            .item-name {
+              color: var(--the-color);
+              margin-left: 8px;
+            }
+            
+            .item-value {
+              color: #222c;
+            }
+          }
         }
-
+        
         .info-text {
-
+          margin-top: 1.5rem;
+          padding: 1rem 2rem;
         }
-
+        
         .info-link {
           color: var(--the-color); 
           float: left;
@@ -83,6 +103,37 @@
             padding: 0.3rem 2rem;
             margin-left: 2rem;
           }
+        }
+      }
+    }
+
+    .screenshots {
+      padding-top: 1rem;
+      text-align: center;
+
+      .image-one {
+        background: var(--the-color);
+        width: 60%;
+        height: 110vh;
+        margin: 2rem auto;
+      }
+
+      .image-two {
+        background: var(--the-color);
+        width: 60%;
+        height: 110vh;
+        margin: 2rem auto;
+      }
+      
+      .button {
+        background: var(--the-color);
+        display: inline-block;
+        padding: 0.3rem 2.2rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
+
+        &:hover {
+          color: red;
         }
       }
     }

@@ -19,7 +19,7 @@
           
           .side-layer {
             width: 80%;
-            background: #ebd300;
+            background: var(--the-color);
           }
 
           .header {
@@ -63,7 +63,7 @@
           top: 0;
           width: 40%;
           height: 100%;
-          border: 2px solid #ebd300;
+          border: 2px solid var(--the-color);
           z-index: -1;
           
           &.right {
@@ -122,7 +122,7 @@
         .button {
           padding: 0.2rem 3rem;
           float: left;
-          background: #ebd300;
+          background: var(--the-color);
           cursor: pointer;
         }
       }

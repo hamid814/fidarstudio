@@ -24,17 +24,17 @@
       padding-bottom: 2rem;
       padding-right: 3rem;
       margin-left: 2rem;
-      border-bottom: 2px solid #ebd300; }
+      border-bottom: 2px solid var(--the-color); }
       .footer .wraped .list-container .list:last-child {
         border-bottom: none; }
       .footer .wraped .list-container .list .title {
-        color: #ebd300;
+        color: var(--the-color);
         font-size: 130%; }
       .footer .wraped .list-container .list .item {
         padding-right: 1rem;
         cursor: pointer; }
         .footer .wraped .list-container .list .item:hover {
-          color: #ebd300;
+          color: var(--the-color);
           -webkit-filter: brightness(70%);
           filter: brightness(70%); }
   .footer .wraped .contact-container {
@@ -54,7 +54,7 @@
     .footer .wraped .contact-container #form {
       text-align: center; }
       .footer .wraped .contact-container #form .title {
-        color: #ebd300;
+        color: var(--the-color);
         font-size: 135%;
         margin-top: 1rem;
         margin-bottom: 1rem; }
@@ -63,7 +63,7 @@
         .footer .wraped .contact-container #form .form-group:last-child {
           border-bottom: none; }
         .footer .wraped .contact-container #form .form-group input {
-          border-bottom: 2px solid #ebd300;
+          border-bottom: 2px solid var(--the-color);
           outline: none;
           padding: 0.1rem 1rem;
           margin: 0 auto;
@@ -74,10 +74,10 @@
             width: 35%; }
         .footer .wraped .contact-container #form .form-group input[type="submit"] {
           border-bottom: none;
-          background: #ebd300;
+          background: var(--the-color);
           margin-top: 1rem;
           width: 40%; }
     .footer .wraped .contact-container .information {
       padding: 15%; }
       .footer .wraped .contact-container .information .name {
-        color: #ebd300; }
+        color: var(--the-color); }

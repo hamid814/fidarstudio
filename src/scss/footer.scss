@@ -17,14 +17,14 @@
           right: 3rem;
         };
         margin-left: 2rem;
-        border-bottom: 2px solid #ebd300;
+        border-bottom: 2px solid var(--the-color);
         
         &:last-child {
           border-bottom: none;
         }
         
         .title {
-          color: #ebd300;
+          color: var(--the-color);
           font-size: 130%;
         }
         
@@ -33,7 +33,7 @@
           cursor: pointer;
           
           &:hover {
-            color: #ebd300;
+            color: var(--the-color);
             filter: brightness(70%);
           }
         }
@@ -50,7 +50,7 @@
         text-align: center;
         
         .title {
-          color: #ebd300;
+          color: var(--the-color);
           font-size: 135%;
           margin: {
             top: 1rem;
@@ -68,7 +68,7 @@
           }
           
           input {
-            border-bottom: 2px solid #ebd300;
+            border-bottom: 2px solid var(--the-color);
             outline: none;
             padding: 0.1rem 1rem;
             margin: 0 auto;
@@ -83,7 +83,7 @@
           
           input[type="submit"] {
             border-bottom: none;
-            background: #ebd300;
+            background: var(--the-color);
             margin-top: 1rem;
             width: 40%;
           }
@@ -94,7 +94,7 @@
         padding: 15%;
         
         .name {
-          color: #ebd300;
+          color: var(--the-color);
         }
       }
     }
