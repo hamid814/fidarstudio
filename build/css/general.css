@@ -13,8 +13,7 @@
 
 :root {
   --side-bar-width: 90px;
-  --the-color: var(--the-color);
-  --the-color: #6c9; }
+  --the-color: #ebd300; }
 
 html {
   scroll-behavior: smooth; }

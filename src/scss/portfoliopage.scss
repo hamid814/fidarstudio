@@ -1,0 +1,82 @@
+.page.portfolio {
+
+  .wraped {
+    padding: 1rem;
+    display: block;
+  }
+
+  .portfolio-page-header {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--the-color);
+    cursor: default;
+    margin-bottom: 7vh;
+    
+    .title {
+      font-size: 200%;
+      cursor: default;
+      
+      span {
+        color: var(--the-color);
+        background: #3339;
+        padding-right: 9px;
+        margin-left: 9px;
+        cursor: default;
+        
+        &:hover {
+          background: var(--the-color);
+          color: #3339;
+        }
+      }
+    }
+  }
+
+  .portfolio-page-content {
+    
+    .portfolio-item {
+      margin-bottom: 100px;
+      display: flex;
+      
+      .image-column {
+        flex-basis: 35%;
+
+        .image {
+          height: 100%;
+          width: 100%;
+          background: var(--the-color);
+        }
+      }
+      
+      .info-column {
+        padding: 1.1rem;
+
+        .item-title {
+          font-size: 140%;
+          color: var(--the-color);
+        }
+
+        .item-year {
+          margin-right: 5px;
+        }
+
+        .item-text {
+          padding: 1rem;
+        }
+
+        .item-button {
+          background: var(--the-color);
+          padding: 0.2rem 1.7rem;
+          float: right;
+          cursor: pointer;
+
+          &:hover {
+            filter: brightness(110%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -108,4 +108,7 @@
     background: var(--the-color);
     display: inline-block;
     padding: 0.3rem 2.2rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    cursor: pointer; }
+    .page.portfolio.single .content .screenshots .button:hover {
+      padding: 0.3rem 3rem; }

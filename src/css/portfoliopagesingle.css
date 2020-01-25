@@ -111,4 +111,4 @@
     margin-bottom: 2rem;
     cursor: pointer; }
     .page.portfolio.single .content .screenshots .button:hover {
-      color: red; }
+      padding: 0.3rem 3rem; }
