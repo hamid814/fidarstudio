@@ -41,10 +41,11 @@
     width: 80%;
     margin-bottom: 60px;
     display: flex;
-    flex-direction: column;
+    padding: 0.4rem;
+    flex-direction: row;
     
     &:last-child {
-      margin-bottom: 0px;
+      margin-bottom: 40px;
     }
     
     &:nth-child(odd) {
@@ -58,7 +59,7 @@
     &:nth-child(even) {
       
       .news-back-layer {
-        transform: skew(35deg);
+        transform: skew(25deg);
         left: -90%;
       }
     }
@@ -71,66 +72,77 @@
       left: -10%;
       width: 200%;
       background: var(--the-color);
-      transform: skew(-35deg);
+      transform: skew(-25deg);
     }
 
-    .news-title {
-      font-size: 160%;
-      color: #333c;
-      filter: brightness(75%);
-      cursor: pointer;
-      margin: {
-        bottom: 20px;
-        right: 30px;
-      }
-    }
-
-    .news-text {
-      margin-bottom: 30px;
+    .news-image {
+      background: #3335;
+      flex-basis: 30%;
     }
     
-    .news-button {
-      width: 20%;
-      margin-left: 13%;
-      background: var(--the-color);
-      text-align: center;
-      float: left;
-      padding: 0.1rem;
-      cursor: pointer;
-      filter: brightness(75%);
-      
-      &:hover {
-        filter: brightness(100%);
-      }
-    }
-    
-    .news-footer {
-      position: absolute;
-      width: 30%;
-      bottom: 0;
-      right: 0;
+    .news-info {
       display: flex;
-
-      .news-date {
-        display: inline-block;
-        color: #3337;
-        cursor: default;
-        
-        &:hover {
-          
-          color: #333e;
+      flex-direction: column;
+      flex-basis: 70%;
+      
+      .news-title {
+        font-size: 160%;
+        color: #333c;
+        filter: brightness(75%);
+        cursor: pointer;
+        margin: {
+          bottom: 20px;
+          right: 30px;
         }
       }
       
-      .news-auther {
-        display: inline-block;
-        margin-left: 15px;
-        margin-right: 15px;
+      .news-text {
+        margin-bottom: 30px;
+      }
+      
+      .news-button {
+        width: 20%;
+        margin-left: 13%;
+        background: var(--the-color);
+        text-align: center;
+        float: left;
+        padding: 0.1rem;
         cursor: pointer;
-        color: #3337;
+        filter: brightness(75%);
         
         &:hover {
-          color: #333e;
+          filter: brightness(100%);
+        }
+      }
+      
+      .news-footer {
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        
+        .news-date {
+          display: inline-block;
+          color: #3337;
+          cursor: default;
+          
+          &:hover {
+            
+            color: #333e;
+          }
+        }
+        
+        .news-auther {
+          display: inline-block;
+          margin-left: 15px;
+          margin-right: 15px;
+          cursor: pointer;
+          color: #3337;
+          
+          &:hover {
+            color: #333e;
+          }
         }
       }
     }

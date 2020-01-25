@@ -125,3 +125,79 @@
     }
   }
 }
+
+.page.newsletter.single.comment {
+  
+  .wraped {
+    margin-top: -2vh;
+    padding: 25px;
+  }
+  
+  .add-comment-box {
+    margin-top: 1vh;
+    background: #3331;
+    padding: 0.7rem;
+    
+    .title {
+      margin-bottom: 1.3vh;
+      font-size: 120%;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: row-reverse;
+
+      label {
+        flex-basis: 90px;
+      }
+
+      input {
+        text-align: right;
+      }
+
+      input[type="submit"] {
+        background: var(--the-color);
+        transform: translateX(-90px);
+        padding: 0.1rem 1rem;
+      }
+    }
+  }
+
+  .single-comment {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: row-reverse;
+    
+    .avatar {
+      background: var(--the-color);
+      width: 60px;
+      height: 60px;
+    }
+
+    .content {
+      position: relative;
+      padding: 0.4rem;
+      margin-right: 40px;
+      background: #3332;
+      
+      .name {
+        margin-right: 12px;
+      }
+      
+      .text {
+        padding: 0.7rem;
+      }
+
+      .arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 10px solid #3332;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        top: 0;
+        right: -20px;
+      }
+    }
+  }
+}
