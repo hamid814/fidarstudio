@@ -1,2 +1,69 @@
-* {
-  color: red; }
+.page.portfolio.single .wraped {
+  padding: 1.3rem;
+  display: block; }
+
+.page.portfolio.single .portfolio-single-header {
+  width: 100%;
+  height: 27vh;
+  margin-bottom: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: var(--the-color); }
+  .page.portfolio.single .portfolio-single-header .title {
+    font-size: 120%;
+    cursor: default; }
+    .page.portfolio.single .portfolio-single-header .title span {
+      color: var(--the-color);
+      background: #3339;
+      margin-left: 5px;
+      margin-right: 0px;
+      padding-left: 5px;
+      padding-right: 5px;
+      cursor: default; }
+      .page.portfolio.single .portfolio-single-header .title span:hover {
+        color: #333e;
+        background: var(--the-color); }
+  .page.portfolio.single .portfolio-single-header .sub-title {
+    font-size: 200%;
+    cursor: default;
+    margin-top: 15px; }
+
+.page.portfolio.single .content {
+  border: 1px solid red; }
+  .page.portfolio.single .content .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid blue; }
+    .page.portfolio.single .content .details .image {
+      -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+      background: var(--the-color); }
+    .page.portfolio.single .content .details .info {
+      -ms-flex-preferred-size: 65%;
+      flex-basis: 65%; }
+      .page.portfolio.single .content .details .info .info-title {
+        color: red; }
+      .page.portfolio.single .content .details .info .info-link {
+        color: var(--the-color);
+        float: left;
+        padding: 0.3rem 0.1rem;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer; }
+        .page.portfolio.single .content .details .info .info-link:hover {
+          background: #3339;
+          padding: 0.3rem 2rem;
+          margin-left: 2rem; }
