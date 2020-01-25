@@ -39,12 +39,12 @@
       left: 0;
       width: 0;
       height: 100%;
-      background: #ebd300;
+      background: var(--the-color);
       z-index: 5; }
     .portfolio .wraped .item .back-layer {
       position: absolute;
       z-index: -1;
-      background: #ebd300;
+      background: var(--the-color);
       opacity: 0;
       width: 100%;
       height: 100%; }
@@ -56,7 +56,7 @@
       margin-top: 3rem;
       cursor: default; }
     .portfolio .wraped .item .button {
-      background: #ebd300;
+      background: var(--the-color);
       padding: 0.25rem 1.6rem;
       margin-top: -1.1rem;
       opacity: 0;

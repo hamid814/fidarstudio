@@ -33,7 +33,7 @@
 
 .page.services .services-menu {
   margin-top: 14px;
-  margin-bottom: 70px;
+  margin-bottom: 18vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,6 +51,8 @@
     .page.services .services-menu .item:hover {
       background: var(--the-color);
       color: #333c; }
+    .page.services .services-menu .item div {
+      cursor: pointer; }
 
 .page.services .service-item {
   position: relative;
@@ -83,7 +85,10 @@
     left: 0;
     background: var(--the-color);
     -webkit-transform: skewY(10deg);
-    transform: skewY(10deg); }
+    transform: skewY(10deg);
+    background-size: auto auto;
+    background-color: #ebd30044;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, var(--the-color) 10px, var(--the-color) 20px); }
   .page.services .service-item .service-content {
     margin-left: 210px; }
     .page.services .service-item .service-content .title {

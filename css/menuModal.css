@@ -24,7 +24,7 @@
 #menu-wraper {
   width: 100%;
   height: 100%;
-  background: #ebd300;
+  background: var(--the-color);
   position: relative; }
   #menu-wraper .menu-menu-container {
     position: absolute;
