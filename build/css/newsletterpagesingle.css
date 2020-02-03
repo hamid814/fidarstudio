@@ -88,3 +88,65 @@
       display: inline-block; }
       .page.newsletter.single .other-posts .next-post .footer .auther {
         margin: 0; }
+
+.page.newsletter.single.comment .wraped {
+  margin-top: -2vh;
+  padding: 25px; }
+
+.page.newsletter.single.comment .add-comment-box {
+  margin-top: 1vh;
+  background: #3331;
+  padding: 0.7rem; }
+  .page.newsletter.single.comment .add-comment-box .title {
+    margin-bottom: 1.3vh;
+    font-size: 120%; }
+  .page.newsletter.single.comment .add-comment-box .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+    .page.newsletter.single.comment .add-comment-box .form-group label {
+      -ms-flex-preferred-size: 90px;
+      flex-basis: 90px; }
+    .page.newsletter.single.comment .add-comment-box .form-group input {
+      text-align: right; }
+    .page.newsletter.single.comment .add-comment-box .form-group input[type="submit"] {
+      background: var(--the-color);
+      -webkit-transform: translateX(-90px);
+      transform: translateX(-90px);
+      padding: 0.1rem 1rem; }
+
+.page.newsletter.single.comment .single-comment {
+  margin-top: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+  .page.newsletter.single.comment .single-comment .avatar {
+    background: var(--the-color);
+    width: 60px;
+    height: 60px; }
+  .page.newsletter.single.comment .single-comment .content {
+    position: relative;
+    padding: 0.4rem;
+    margin-right: 40px;
+    background: #3332; }
+    .page.newsletter.single.comment .single-comment .content .name {
+      margin-right: 12px; }
+    .page.newsletter.single.comment .single-comment .content .text {
+      padding: 0.7rem; }
+    .page.newsletter.single.comment .single-comment .content .arrow {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 10px solid #3332;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      top: 0;
+      right: -20px; }
