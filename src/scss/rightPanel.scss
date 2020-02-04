@@ -21,26 +21,33 @@
     
     .menu-btn-container {
       cursor: pointer;
-      animation: menubtncontaineranim 6s cubic-bezier(1,1,1,1) infinite;
 
       &:hover {
         .menu-btn-line {
           background: var(--the-color);
+
+          &:first-child {
+            margin-left: 20px;
+          }
+
+          &:nth-child(2) {
+            width: 22px;
+            margin-left: 8px;
+          }
         }
       }
       
       .menu-btn-line {
         height: 3px;
-        width: 23px;
-        margin-bottom: 7px;
+        width: 30px;
+        margin-bottom: 6px;
         background: #333;
         
         &:first-child {
-          animation: menubtnlineanim 4s ease-in-out infinite reverse;
+          width: 10px;
         }
         
         &:last-child {
-          animation: menubtnlineanim 4s ease-in-out infinite;
           margin-bottom: 0px;
         }
       }
