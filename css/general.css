@@ -63,49 +63,16 @@ a, a:hover, a:active, a:visited {
       border-radius: 50px;
       cursor: pointer;
       z-index: 1;
-      -webkit-animation: dzkjkjdxbvkj 6s ease-in-out infinite;
-      animation: dzkjkjdxbvkj 6s ease-in-out infinite; }
-
-@-webkit-keyframes dzkjkjdxbvkj {
-  0% {
-    border-top-color: transparent;
-    border-bottom-color: var(--the-color);
-    -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg); }
-  90% {
-    -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-    border-top-color: transparent;
-    border-bottom-color: var(--the-color); }
-  100% {
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-    border-top-color: var(--the-color);
-    border-bottom-color: transparent; } }
-
-@keyframes dzkjkjdxbvkj {
-  0% {
-    border-top-color: transparent;
-    border-bottom-color: var(--the-color);
-    -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg); }
-  90% {
-    -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-    border-top-color: transparent;
-    border-bottom-color: var(--the-color); }
-  100% {
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-    border-top-color: var(--the-color);
-    border-bottom-color: transparent; } }
+      -webkit-animation: sectiondotanim 6s ease-in-out infinite;
+      animation: sectiondotanim 6s ease-in-out infinite; }
 
 .section-header {
   position: absolute;
   font-weight: 900;
   font-size: 6.2vh;
   top: 6.2vh;
-  right: 4.6vw; }
+  right: 4.6vw;
+  right: 5vw; }
   .section-header span {
     display: block;
     margin-right: 2.08vw; }
@@ -114,14 +81,14 @@ a, a:hover, a:active, a:visited {
   position: absolute;
   top: 34vh;
   width: 19vw;
-  right: 12vw;
+  right: 5vw;
   font-size: 2vh; }
 
 .section-button {
   position: absolute;
-  top: 72vh;
-  right: 14vw;
-  width: 20.8vw;
+  top: 65vh;
+  right: 5vw;
+  width: 20vw;
   height: 8.25vh;
   font-size: 2.5vh;
   -webkit-box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.5);

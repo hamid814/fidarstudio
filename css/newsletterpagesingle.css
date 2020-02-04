@@ -5,7 +5,7 @@
     height: 30vh;
     background: var(--the-color); }
 
-.page.newsletter.single .title {
+.page.newsletter.single .title, .page.newsletter.single.comment .comments-title {
   font-weight: 500;
   font-size: 220%;
   -webkit-transform: translateX(-35px);
@@ -45,7 +45,7 @@
     padding: 0.5rem; }
     .page.newsletter.single .other-posts .prev-post:hover {
       background: #5552; }
-    .page.newsletter.single .other-posts .prev-post .title {
+    .page.newsletter.single .other-posts .prev-post .title, .page.newsletter.single.comment .other-posts .prev-post .comments-title {
       font-weight: 500;
       font-size: 130%;
       -webkit-transform: translateX(-10px);
@@ -70,7 +70,7 @@
     padding: 0.5rem; }
     .page.newsletter.single .other-posts .next-post:hover {
       background: #5552; }
-    .page.newsletter.single .other-posts .next-post .title {
+    .page.newsletter.single .other-posts .next-post .title, .page.newsletter.single.comment .other-posts .next-post .comments-title {
       font-weight: 500;
       font-size: 130%;
       -webkit-transform: translateX(-10px);
@@ -90,14 +90,28 @@
         margin: 0; }
 
 .page.newsletter.single.comment .wraped {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
   margin-top: -2vh;
-  padding: 25px; }
+  padding: 25px;
+  padding-top: 5rem; }
+
+.page.newsletter.single.comment .comments-title {
+  position: absolute;
+  top: 1rem;
+  right: 0; }
 
 .page.newsletter.single.comment .add-comment-box {
-  margin-top: 1vh;
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
   background: #3331;
   padding: 0.7rem; }
-  .page.newsletter.single.comment .add-comment-box .title {
+  .page.newsletter.single.comment .add-comment-box .title, .page.newsletter.single.comment .add-comment-box .comments-title {
     margin-bottom: 1.3vh;
     font-size: 120%; }
   .page.newsletter.single.comment .add-comment-box .form-group {
@@ -119,34 +133,41 @@
       transform: translateX(-90px);
       padding: 0.1rem 1rem; }
 
-.page.newsletter.single.comment .single-comment {
-  margin-top: 4vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse; }
-  .page.newsletter.single.comment .single-comment .avatar {
-    background: var(--the-color);
-    width: 60px;
-    height: 60px; }
-  .page.newsletter.single.comment .single-comment .content {
-    position: relative;
-    padding: 0.4rem;
-    margin-right: 40px;
-    background: #3332; }
-    .page.newsletter.single.comment .single-comment .content .name {
-      margin-right: 12px; }
-    .page.newsletter.single.comment .single-comment .content .text {
-      padding: 0.7rem; }
-    .page.newsletter.single.comment .single-comment .content .arrow {
-      position: absolute;
-      width: 0;
-      height: 0;
-      border: 10px solid #3332;
-      border-right-color: transparent;
-      border-bottom-color: transparent;
-      top: 0;
-      right: -20px; }
+.page.newsletter.single.comment .comments-box {
+  padding: 1rem;
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%; }
+  .page.newsletter.single.comment .comments-box .single-comment {
+    margin-top: 4vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+    .page.newsletter.single.comment .comments-box .single-comment:first-child {
+      margin-top: 0vh; }
+    .page.newsletter.single.comment .comments-box .single-comment .avatar {
+      background: var(--the-color);
+      width: 60px;
+      height: 60px; }
+    .page.newsletter.single.comment .comments-box .single-comment .content {
+      position: relative;
+      padding: 0.4rem;
+      margin-right: 40px;
+      background: #3332; }
+      .page.newsletter.single.comment .comments-box .single-comment .content .name {
+        margin-right: 12px;
+        cursor: default; }
+      .page.newsletter.single.comment .comments-box .single-comment .content .text {
+        padding: 0.7rem; }
+      .page.newsletter.single.comment .comments-box .single-comment .content .arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 10px solid #3332;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        top: 0;
+        right: -20px; }
