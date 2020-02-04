@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>فیدار استودیو - صفحه</title>
+  <title>فیدار استودیو</title>
   <!--bootstrap start-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -18,8 +18,6 @@
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/newsletter.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/page.css">
-  <link rel="stylesheet" href="css/newsletterPageTest.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/menuModal.css">
   <link rel="stylesheet" href="css/mountModal.css">
@@ -27,51 +25,84 @@
   <link rel="stylesheet" href="css/scrollBar.css">
   <link rel="stylesheet" href="css/leftPanel.css">
   <link rel="stylesheet" href="css/rightPanel.css">
+  <link rel="stylesheet" href="css/keyframes.css">
+  <link rel="stylesheet" href="style/menuBtn.css">
   <!-- temp for test style sheet -->
   <link rel="stylesheet" href="css/test.css">
-  <!-- animations -->
-  <link rel="stylesheet" href="css/keyframes.css">
   <!-- @media files -->
   <link rel="stylesheet" href="css/media1300.css">
-  <!-- menu btn functional css file -->
-  <!-- key: jbnilvkujshnfujvn -->
-  <link rel="stylesheet" href="style/menuBtn.css">
 </head>
 <body>
   <!-- left bar start -->
-  <section id="left-panel-container" class="page">
+  <section id="left-panel-container">
     <div id="left-panel">
       <div id="logo">
         <!-- logo place -->
         <img src="images/logo.png" alt="fidar-logo">
       </div>
+      <!-- pagination dots -->
+      <div id="page-nav">
+        <a href="#section-1">
+          <div class="page-number-section" id="dot-number-1" name="1">
+            <div class="page-number" name="1">
+              01
+            </div>
+            <div class="page-number-dot" name="1"></div>
+            <div class="page-number-desc" name="1">خانه</div>
+          </div>
+        </a>
+        <a href="#section-2">
+          <div class="page-number-section active" id="dot-number-4" name="4">
+            <div class="page-number" name="4">
+              04
+            </div>
+            <div class="page-number-dot" name="4"></div>
+            <div class="page-number-desc" name="4">خدمات</div>
+          </div>
+        </a>
+        <a href="#section-3">
+          <div class="page-number-section" id="dot-number-3" name="3">
+            <div class="page-number" name="3">
+              03
+            </div>
+            <div class="page-number-dot" name="3"></div>
+            <div class="page-number-desc" name="3">نمونه کار ها</div>
+          </div>
+        </a>
+        <a href="#section-4">
+          <div class="page-number-section" id="dot-number-5" name="5">
+            <div class="page-number" name="5">
+              05
+            </div>
+            <div class="page-number-dot" name="5"></div>
+            <div class="page-number-desc" name="5">خبرنامه</div>
+          </div>
+        </a>
+        <a href="#section-5">
+          <div class="page-number-section" id="dot-number-2" name="2">
+            <div class="page-number" name="2">
+              02
+            </div>
+            <div class="page-number-dot" name="2"></div>
+            <div class="page-number-desc" name="2">درباره</div>
+          </div>
+        </a>
+        <a href="#section-6">
+          <div class="page-number-section" id="dot-number-6" name="6">
+            <div class="page-number" name="6">
+              06
+            </div>
+            <div class="page-number-dot" name="6"></div>
+            <div class="page-number-desc" name="6">تماس با ما</div>
+          </div>
+        </a>
+      </div>
     </div> 
-    <div class="social-media">
-      <!-- social media icons place -->
-      <div class="social-media-icon slide">
-        <img src="images/instagram.png">
-        <span class="social-media-icon-desc">
-          our instagram
-        </span>
-      </div>
-      <div class="social-media-icon">
-        <img src="images/instagram.png">
-        <span class="social-media-icon-desc">
-          our instagram
-        </span>
-      </div>
-      <div class="social-media-icon">
-        <img src="images/instagram.png">
-        <span class="social-media-icon-desc">
-          our instagram
-        </span>
-      </div>
-    </div>
   </section>
   <!-- left bar end -->
   
   <!-- right bar start -->
-  <section id="right-panel-container" class="page">
+  <section id="right-panel-container">
     <div id="right-panel">
       <!-- menu btn -->
       <div id="menu-btn">
@@ -81,6 +112,28 @@
           <div class="menu-btn-line"></div>
         </div>
       </div>
+      <!-- social media icons -->
+      <div id="social-media">
+        <!-- social media icons place -->
+        <div class="social-media-icon slide">
+          <img src="images/instagram.png">
+          <span class="social-media-icon-desc">
+            our instagram
+          </span>
+        </div>
+        <div class="social-media-icon">
+          <img src="images/instagram.png">
+          <span class="social-media-icon-desc">
+            our instagram
+          </span>
+        </div>
+        <div class="social-media-icon">
+          <img src="images/instagram.png">
+          <span class="social-media-icon-desc">
+            our instagram
+          </span>
+        </div>
+      </div>
       <div id="call-us" class="callus-slide call-us">
         <!-- fast contact us btn -->
       </div>
@@ -88,214 +141,495 @@
   </section>
   <!-- right bar end -->
   <!-- main sections start -->
-  <section class="section deactive-section page newsletter">
+  <section class="section deactive-section home" id="section-1">
     <div class="wraped">
-      <div class="page-header">
-         بلاگ
+      <div class="dot">
+
       </div>
-      <div class="news-container">
-        <div class="news-item">
-          <div class="news-back-layer"></div>
-          <div class="news-image">
-            
+      <h2 class="section-header">
+        <div class="animate anim-1">
+          هدر
+          <span>بخش</span>
+        </div>
+      </h2>
+      <div class="section-body">
+        <div class="animate anim-2">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم است و برای.
+        </div>
+      </div>
+      <div>
+        <div class="animate anim-3 section-button fill">
+          دکمه بخش
+        </div>
+      </div>
+      <div class="section-right">
+        <div class="animate anim-3">
+          <div class="right-list">
+            <div class="right-list-item">
+              <span class="right-list-item-number">03</span>
+              <span class="right-list-item-title">یه چیزی</span>
+            </div>
+            <div class="right-list-item">
+              <span class="right-list-item-number">04</span>
+              <span class="right-list-item-title">یه چیزی</span>
+            </div>
           </div>
-          <div class="news-info">
-            <div class="news-title">
-              عنوان خبر
+          <div class="right-list">
+            <div class="right-list-item">
+              <span class="right-list-item-number">01</span>
+              <span class="right-list-item-title">یه چیزی</span>
             </div>
-            <div class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus maxime reprehenderit molestiae, provident maiores? Nam esse, labore non fuga.
-            </div>
-            <a href="newslettersingle.html">
-              <div class="news-button">
-                ادامه خبر
-              </div>
-            </a>
-            <div class="news-footer">
-              <div class="news-date">
-                01/01/98
-              </div>
-              <div class="news-auther">
-                نویسنده
-              </div>
+            <div class="right-list-item">
+              <span class="right-list-item-number">02</span>
+              <span class="right-list-item-title">یه چیزی</span>
             </div>
           </div>
         </div>
-        <div class="news-item">
-          <div class="news-back-layer"></div>
-          <div class="news-image">
-            
-          </div>
-          <div class="news-info">
-            <div class="news-title">
-              عنوان خبر
-            </div>
-            <div class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus maxime reprehenderit molestiae, provident maiores? Nam esse, labore non fuga.
-            </div>
-            <a href="newslettersingle.html">
-              <div class="news-button">
-                ادامه خبر
-              </div>
-            </a>
-            <div class="news-footer">
-              <div class="news-date">
-                01/01/98
-              </div>
-              <div class="news-auther">
-                نویسنده
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="news-item">
-          <div class="news-back-layer"></div>
-          <div class="news-image">
-            
-          </div>
-          <div class="news-info">
-            <div class="news-title">
-              عنوان خبر
-            </div>
-            <div class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus maxime reprehenderit molestiae, provident maiores? Nam esse, labore non fuga.
-            </div>
-            <a href="newslettersingle.html">
-              <div class="news-button">
-                ادامه خبر
-              </div>
-            </a>
-            <div class="news-footer">
-              <div class="news-date">
-                01/01/98
-              </div>
-              <div class="news-auther">
-                نویسنده
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="news-item">
-          <div class="news-back-layer"></div>
-          <div class="news-image">
-            
-          </div>
-          <div class="news-info">
-            <div class="news-title">
-              عنوان خبر
-            </div>
-            <div class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus maxime reprehenderit molestiae, provident maiores? Nam esse, labore non fuga.
-            </div>
-            <a href="newslettersingle.html">
-              <div class="news-button">
-                ادامه خبر
-              </div>
-            </a>
-            <div class="news-footer">
-              <div class="news-date">
-                01/01/98
-              </div>
-              <div class="news-auther">
-                نویسنده
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="news-item">
-          <div class="news-back-layer"></div>
-          <div class="news-image">
-            
-          </div>
-          <div class="news-info">
-            <div class="news-title">
-              عنوان خبر
-            </div>
-            <div class="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus maxime reprehenderit molestiae, provident maiores? Nam esse, labore non fuga.
-            </div>
-            <a href="newslettersingle.html">
-              <div class="news-button">
-                ادامه خبر
-              </div>
-            </a>
-            <div class="news-footer">
-              <div class="news-date">
-                01/01/98
-              </div>
-              <div class="news-auther">
-                نویسنده
-              </div>
-            </div>
-          </div>
-        </div>
-        
+      </div>
+      <div class="section-backtext">
+        fidar
+        <span>studio</span>
       </div>
     </div>
   </section>
-  <section class="section deactive-section page footer" id="contact">
+  <section class="section deactive-section services" id="section-2">
     <div class="wraped">
-      <div class="footer-list-container">
-        <div class="list">
-          <div class="list-title">
-          لیست
+      <div class="column column-one">
+        <div class="row row-one">
+          <div class="dot"></div>
+          <span>
+            سئو
+          </span>
+          <a href="services.html#seo">
+            <div class="button">
+              برو
+            </div>
+          </a>
         </div>
-        <div class="list-item">
-          آیتم
-        </div>
-        <div class="list-item">
-          آیتم
-        </div>
-        <div class="list-item">
-          آیتم
-        </div>
-        <div class="list-item">
-          آیتم
-        </div>
-        </div>
-        <div class="list">
-          <div class="list-title">
-          لیست
-        </div>
-        <div class="list-item">
-          آیتم
-        </div>
-        <div class="list-item">
-          آیتم
-        </div>
-        <div class="list-item">
-          آیتم
-        </div>
-        <div class="list-item">
-          آیتم
-        </div>
+        <div class="row row-two">
+          <span>
+            طراحی وب          
+          </span>
+          <a href="services.html#webdesign">
+            <div class="button">
+              برو
+            </div>
+          </a>
         </div>
       </div>
-      <div class="contact">
-        <div class="phone">
+      <div class="column column-two">
+        <div class="row row-one">
           <span>
-            تلفن
+            تولید محتوا      
           </span>
-          00 00 000000
+          <a href="services.html#contentproduction">
+            <div class="button">
+              برو
+            </div>
+          </a>
         </div>
-        <div class="adress">
+        <div class="row row-two">
           <span>
-            آدرس
+            دیجیتال مارکتینگ   
           </span>
-          خیابان یکم کوچه اول پلاک دو
+          <a href="services.html#digitalmarketting">
+            <div class="button">
+              برو
+            </div>
+          </a>
+        </div>
+        <div class="row row-three">
+          <span>
+            خدمات گرافیک
+          </span>
+          <a href="services.html#graphicservices">
+            <div class="button">
+              برو
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="column column-three">
+        <div class="row row-one">
+          <span>
+            پشتیبانی وبسایت  
+          </span>
+          <a href="services.html#websitesupport">
+            <div class="button">
+              برو
+            </div>
+          </a>
+        </div>
+        <div class="row row-two">
+          <span>
+            آموزش مدیریت سایت          
+          </span>
+          <a href="services.html#teachingsitemanagement">
+            <div class="button">
+              برو
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section deactive-section portfolio" id="section-3">
+    <div class="wraped">
+      <div class="dot">
+        
+      </div>
+      <div class="item">
+        <div class="anim-layer">
+          
+        </div>
+        <div class="back-layer">
+          
+        </div>
+        <div class="title">
+          همه ی کار ها
+        </div>
+        <div class="desc">
+          توضیحات نمونه کار
+        </div>
+        <a href="portfolio.html">
+          <div class="button">
+            رفتن
+          </div>
+        </a>
+      </div>
+      <div class="item">
+        <div class="anim-layer">
+          
+        </div>
+        <div class="back-layer">
+          
+        </div>
+        <div class="title">
+          تیتر
+        </div>
+        <div class="desc">
+          توضیحات نمونه کار
+        </div>
+        <a href="portfoliosingle.html">
+          <div class="button">
+            مشاهده
+          </div>
+        </a>
+      </div>
+      <div class="item">
+        <div class="anim-layer">
+          
+        </div>
+        <div class="back-layer">
+          
+        </div>
+        <div class="title">
+          تیتر
+        </div>
+        <div class="desc">
+          توضیحات نمونه کار
+        </div>
+        <a href="portfoliosingle.html">
+          <div class="button">
+            مشاهده
+          </div>
+        </a>
+      </div>
+      <div class="item">
+        <div class="anim-layer">
+          
+        </div>
+        <div class="back-layer">
+          
+        </div>
+        <div class="title">
+          تیتر
+        </div>
+        <div class="desc">
+          توضیحات نمونه کار
+        </div>
+        <a href="portfoliosingle.html">
+          <div class="button">
+            مشاهده
+          </div>
+        </a>
+      </div>
+      <div class="item">
+        <div class="anim-layer">
+          
+        </div>
+        <div class="back-layer">
+          
+        </div>
+        <div class="title">
+          تیتر
+        </div>
+        <div class="desc">
+          توضیحات نمونه کار
+        </div>
+        <a href="portfoliosingle.html">
+          <div class="button">
+            مشاهده
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="section deactive-section newsletter" id="section-4">
+    <div class="wraped">
+      <div class="dot">
+        
+      </div>
+      <div class="newsletter-item">
+        <div class="content">
+          <div class="side-layer right">
+            
+          </div>
+          <div class="header right">
+            <div class="date">
+              01/01/98
+            </div>
+            <div class="auther">
+              نویسنده
+            </div>
+          </div>
+          <div class="title">
+            عنوان خبر
+          </div>
+          <div class="text">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان
+          </div>
+          <a href="newslettersingle.html">
+            <div class="button">
+              بیشتر
+            </div>
+          </a>
+          </div>
+      </div>
+      <div class="newsletter-item">
+        <div class="content">
+          <div class="side-layer left">
+            
+          </div>
+          <div class="header left">
+            <div class="date">
+              01/01/98
+            </div>
+            <div class="auther">
+              نویسنده
+            </div>
+          </div>
+          <div class="title">
+            عنوان خبر
+          </div>
+          <div class="text">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان
+        </div>
+        <a href="newslettersingle.html">
+            <div class="button">
+              بیشتر
+            </div>
+          </a>
+      </div>
+      </div>
+      <div class="newsletter-item">
+        <div class="content">
+          <div class="side-layer left">
+            
+          </div>
+          <div class="header right">
+            <div class="date">
+              01/01/98
+            </div>
+            <div class="auther">
+              نویسنده
+            </div>
+          </div>
+          <div class="title">
+            اخبار
+          </div>
+          <div class="text">
+            اخبار فیدار استودیو را بخوانید
+          </div>
+          <a href="newsletter.html">
+            <div class="button">
+              برو
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="newsletter-item">
+        <div class="content">
+          <div class="side-layer right">
+            
+          </div>
+          <div class="header left">
+            <div class="date">
+              01/01/98
+            </div>
+            <div class="auther">
+              نویسنده
+            </div>
+          </div>
+          <div class="title">
+            عنوان خبر
+          </div>
+          <div class="text">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان
+          </div>
+          <div class="button">
+            بیشتر
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section deactive-section about" id="section-5">
+    <div class="wraped">
+      <div class="dot">
+
+      </div>
+      <div class="background"></div>
+      <div>
+        <div class="title">
+          درباره ما
+        </div>
+        <div class="text">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم
+        </div>
+      </div>
+      <div class="coworkers">
+        <div class="title">
+          کسانی که با ما همکاری کرده اند
+        </div>
+        <div class="items-container">
+          <div class="item">
+            <div class="avatar">
+              
+            </div>
+            <div class="name">
+              نام شرکت
+            </div>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              
+            </div>
+            <div class="name">
+              نام شرکت
+            </div>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              
+            </div>
+            <div class="name">
+              نام شرکت
+            </div>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              
+            </div>
+            <div class="name">
+              نام شرکت
+            </div>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              
+            </div>
+            <div class="name">
+              نام شرکت
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section deactive-section footer" id="section-6">
+    <div class="wraped">
+      <div class="dot">
+
+      </div>
+      <div class="list-container">
+        <div class="list">
+          <div class="title">
+            آخرین اخبار
+          </div>
+          <div class="item">
+            عنوان
+          </div>
+          <div class="item">
+            عنوان
+          </div>
+          <div class="item">
+            عنوان
+          </div>
+        </div>
+        <div class="list">
+          <div class="title">
+            خدمات
+          </div>
+          <div class="item">
+            عنوان
+          </div>
+          <div class="item">
+            عنوان
+          </div>
+          <div class="item">
+            عنوان
+          </div>
+          <div class="item">
+            عنوان
+          </div>
+        </div>
+      </div>
+      <div class="contact-container">
+        <form id="form">
+          <div class="title">
+            ارتباط با ما
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="نام / نام شرکت">
+          </div>
+          <div class="form-group">
+            <input class="co-input" type="email" placeholder="ایمیل">
+            <input class="co-input" type="phone" placeholder="تلفن">
+          </div>
+          <div class="form-group">
+            <input type="url" placeholder="سایت">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="پیام">
+          </div>
+          <div class="form-group">
+            <input type="submit" value="ارسال پیام">
+          </div>
+        </form>
+        <div class="information">
+          <div class="item">
+            <span class="name">
+              آدرس
+            </span>
+            <span class="value">
+              خیابان یکم میدان اول کوچه بهار پلاک دو  
+            </span>
+          </div>
+          <div class="item">
+            <span class="name">
+              تلفن
+            </span>
+            <span class="value">
+              000-(000) 00 00 000  
+            </span>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- main sections end -->
-  <!-- mountain modal start -->
-  <div id="mount-modal" class="mount-off-d mount-off-a page">
-    <div class="x-btn">
-      <div class="line"></div>
-      <div class="line"></div>
-    </div> 
-  </div>
-  <!-- mountain modal end -->
   <!-- menu modal start -->
   <div id="menu-modal" class="menu-modal-off-d menu-modal-off-a">
     <div id="call-us" class="callus-slide call-us">
@@ -318,14 +652,14 @@
           </div>
         </a>
         <a href="portfolio.html">
-        <div class="menu-item">
-          <div class="menu-item-title">
-            نمونه کارها
-          </div>
-          <div class="menu-item-number">
-            02
-          </div>
-        </div>
+	      <div class="menu-item">
+	        <div class="menu-item-title">
+	          نمونه کارها
+	        </div>
+	        <div class="menu-item-number">
+	          02
+	        </div>
+	      </div>
         </a>
         <a href="services.html">
           <div class="menu-item">
@@ -348,15 +682,15 @@
           </div>
         </a>
       </div>
+      </div>
     </div>
-  </div>
-  <!-- menu modal end -->
-  <!-- callus modal start -->
-  <div id="call-us-modal" class="call-us-off-d call-us-off-a">
-    <div id="call-us-modal-container" class="wraped">
-      <div class="x-btn">
-        <div class="line"></div>
-        <div class="line"></div>
+    <!-- menu modal end -->
+    <!-- callus modal start -->
+    <div id="call-us-modal" class="call-us-off-d call-us-off-a">
+      <div id="call-us-modal-container" class="wraped">
+        <div class="x-btn">
+          <div class="line"></div>
+          <div class="line"></div>
       </div>
       <div class="header">
         چجوری پیدامون کنید؟
@@ -404,6 +738,14 @@
     </div>
   </div>
   <!-- callus modal end -->
+  <!-- mountain modal start -->
+  <div id="mount-modal" class="mount-off-d mount-off-a">
+    <div class="x-btn">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div> 
+  </div>
+  <!-- mountain modal end -->
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -17,21 +17,22 @@
     top: 30px;
     right: calc((var(--side-bar-width)) / 2); }
     #right-panel-container #menu-btn .menu-btn-container {
-      cursor: pointer;
-      -webkit-animation: menubtncontaineranim 6s cubic-bezier(1, 1, 1, 1) infinite;
-      animation: menubtncontaineranim 6s cubic-bezier(1, 1, 1, 1) infinite; }
+      cursor: pointer; }
       #right-panel-container #menu-btn .menu-btn-container:hover .menu-btn-line {
         background: var(--the-color); }
+        #right-panel-container #menu-btn .menu-btn-container:hover .menu-btn-line:first-child {
+          margin-left: 20px; }
+        #right-panel-container #menu-btn .menu-btn-container:hover .menu-btn-line:nth-child(2) {
+          width: 22px;
+          margin-left: 8px; }
       #right-panel-container #menu-btn .menu-btn-container .menu-btn-line {
         height: 3px;
-        width: 23px;
-        margin-bottom: 7px;
+        width: 30px;
+        margin-bottom: 6px;
         background: #333; }
         #right-panel-container #menu-btn .menu-btn-container .menu-btn-line:first-child {
-          animation: menubtnlineanim 4s ease-in-out infinite reverse; }
+          width: 10px; }
         #right-panel-container #menu-btn .menu-btn-container .menu-btn-line:last-child {
-          -webkit-animation: menubtnlineanim 4s ease-in-out infinite;
-          animation: menubtnlineanim 4s ease-in-out infinite;
           margin-bottom: 0px; }
   #right-panel-container #social-media {
     position: absolute;

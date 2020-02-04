@@ -91,3 +91,21 @@
     opacity: 1;
   }
 }
+
+@keyframes sectiondotanim {
+  0% {
+    border-top-color: transparent;
+    border-bottom-color: var(--the-color);
+    transform: rotateZ(0deg);
+  }
+  90% {
+    transform: rotateZ(0deg);
+    border-top-color: transparent;
+    border-bottom-color: var(--the-color);
+  }
+  100% {
+    transform: rotateZ(180deg);
+    border-top-color: var(--the-color);
+    border-bottom-color: transparent;
+  }
+}
